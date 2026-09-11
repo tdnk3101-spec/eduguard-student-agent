@@ -1,0 +1,1190 @@
+{
+  "cases": [
+    {
+      "caseId": "DISC-2026-0005",
+      "caseNumber": "DISC-2026-0005",
+      "category": "EXAMINATION_INFRACTION",
+      "status": "INCIDENT_REGISTERED",
+      "stage": 2,
+      "stageName": "Procedural Checklist Active",
+      "incidentDate": "2026-09-11T01:43:00.000Z",
+      "incidentLocation": "University Examination Center - Hall 102",
+      "reportingAuthority": "Hall Superintendent Dr. V. Narayana",
+      "studentId": "STU-GEN-1789110845974",
+      "studentRoll": "24CSE1120",
+      "studentName": "Priya Sundaram",
+      "studentEmail": "priya.24cse1120@vignan.ac.in",
+      "studentDept": "Computer Science & Engineering",
+      "witnesses": [
+        "Invigilator M. Swetha",
+        "Hall Proctor K. Rao"
+      ],
+      "allegationSummary": "Observed referencing unauthorized handwritten formula notes concealed inside university-issued mathematical calculator lid during End-Semester Discrete Mathematics examination.",
+      "evidenceItems": [
+        {
+          "id": "EVD-1789110845700",
+          "title": "Confiscated_Calculator_Specimen_Form.pdf",
+          "type": "Primary Evidence Document",
+          "timestamp": "2026-09-11T07:14:05.700Z"
+        }
+      ],
+      "createdAt": "2026-09-11T07:14:05.974Z",
+      "responseDeadline": "2026-09-17T07:14:05.974Z",
+      "retentionExpiryDate": null,
+      "guardrailFlags": {
+        "guiltDetermined": false,
+        "sanctionRecommended": false,
+        "disciplinaryShieldActive": true
+      }
+    },
+    {
+      "caseId": "DISC-2026-0001",
+      "caseNumber": "DISC-2026-0001",
+      "category": "ACADEMIC_MALPRACTICE",
+      "status": "NOTICE_ISSUED",
+      "stage": 4,
+      "stageName": "Student Response Window Active",
+      "incidentDate": "2026-09-08T14:30:00.000Z",
+      "incidentLocation": "Computing Systems Laboratory - Block C, Lab 304",
+      "reportingAuthority": "Dr. S. K. Narayanan (Associate Professor, Dept of CSE)",
+      "studentId": "STU-2026-1048",
+      "studentRoll": "22BCE1048",
+      "studentName": "Rohan Sharma",
+      "studentEmail": "rohan.22bce1048@vignan.ac.in",
+      "studentDept": "Computer Science & Engineering",
+      "witnesses": [
+        "Lab Assistant M. Ramesh",
+        "Student Invigilator K. Swetha"
+      ],
+      "allegationSummary": "During the internal laboratory practical evaluation for CS302 (Distributed Systems), student was observed referencing unauthorized digital notes on a hidden secondary terminal window.",
+      "evidenceItems": [
+        {
+          "id": "EVD-01",
+          "title": "Invigilator Incident Form signed by Dr. S. K. Narayanan",
+          "type": "PDF Document",
+          "timestamp": "2026-09-08T15:00:00Z"
+        },
+        {
+          "id": "EVD-02",
+          "title": "Network Terminal Session Log snippet displaying unauthorized SSH connection",
+          "type": "System Log",
+          "timestamp": "2026-09-08T14:35:12Z"
+        },
+        {
+          "id": "EVD-03",
+          "title": "Screen capture photograph taken by lab proctor",
+          "type": "Image File",
+          "timestamp": "2026-09-08T14:32:00Z"
+        }
+      ],
+      "createdAt": "2026-09-09T06:21:57.315Z",
+      "responseDeadline": "2026-09-15T06:21:57.315Z",
+      "retentionExpiryDate": null,
+      "guardrailFlags": {
+        "guiltDetermined": false,
+        "sanctionRecommended": false,
+        "disciplinaryShieldActive": true
+      }
+    },
+    {
+      "caseId": "DISC-2026-0002",
+      "caseNumber": "DISC-2026-0002",
+      "category": "CAMPUS_MISCONDUCT",
+      "status": "HEARING_CONVENED",
+      "stage": 6,
+      "stageName": "Committee Deliberation & Decision Ready",
+      "incidentDate": "2026-09-04T22:15:00.000Z",
+      "incidentLocation": "Girls Hostel Complex - Block B Common Courtyard",
+      "reportingAuthority": "Resident Warden Mrs. Geetha Rao",
+      "studentId": "STU-2026-1092",
+      "studentRoll": "23ECE1092",
+      "studentName": "Ananya Verma",
+      "studentEmail": "ananya.23ece1092@vignan.ac.in",
+      "studentDept": "Electronics & Communication Engineering",
+      "witnesses": [
+        "Security Guard K. Ramana",
+        "Hostel Prefect Divya K."
+      ],
+      "allegationSummary": "Unauthorized after-hours entry past gate closing (22:15 PM), refusal to present university identity card to security personnel, and minor verbal alteration at proctorial checkpoint.",
+      "evidenceItems": [
+        {
+          "id": "EVD-11",
+          "title": "Gate Biometric and Turnstile Exception Log (22:18 PM)",
+          "type": "Automated Gate Log",
+          "timestamp": "2026-09-04T22:18:00Z"
+        },
+        {
+          "id": "EVD-12",
+          "title": "Security Incident Statement signed by K. Ramana",
+          "type": "Signed Incident Report",
+          "timestamp": "2026-09-04T22:45:00Z"
+        }
+      ],
+      "createdAt": "2026-09-07T06:21:57.317Z",
+      "responseDeadline": "2026-09-10T06:21:57.317Z",
+      "retentionExpiryDate": null,
+      "guardrailFlags": {
+        "guiltDetermined": false,
+        "sanctionRecommended": false,
+        "disciplinaryShieldActive": true
+      }
+    },
+    {
+      "caseId": "DISC-2026-0003",
+      "caseNumber": "DISC-2026-0003",
+      "category": "CAMPUS_MISCONDUCT",
+      "status": "SANCTION_IN_PROGRESS",
+      "stage": 8,
+      "stageName": "Sanction Compliance Active",
+      "incidentDate": "2026-08-25T17:00:00.000Z",
+      "incidentLocation": "Mechanical Workshop Grounds",
+      "reportingAuthority": "Workshop Superintendent Er. B. Naidu",
+      "studentId": "STU-2026-1015",
+      "studentRoll": "21MECH1015",
+      "studentName": "Vikram Patel",
+      "studentEmail": "vikram.21mech1015@vignan.ac.in",
+      "studentDept": "Mechanical Engineering",
+      "witnesses": [
+        "Tech Assistant V. Anand"
+      ],
+      "allegationSummary": "Operating hydraulic press equipment without required PPE and leaving workshop safety enclosure unlatched.",
+      "evidenceItems": [
+        {
+          "id": "EVD-21",
+          "title": "Safety Violation Notice #ME-882",
+          "type": "Safety Inspection Report",
+          "timestamp": "2026-08-25T17:30:00Z"
+        }
+      ],
+      "createdAt": "2026-08-27T06:21:57.317Z",
+      "responseDeadline": "2026-08-31T06:21:57.317Z",
+      "retentionExpiryDate": null,
+      "guardrailFlags": {
+        "guiltDetermined": false,
+        "sanctionRecommended": false,
+        "disciplinaryShieldActive": true
+      }
+    },
+    {
+      "caseId": "DISC-2026-0004",
+      "caseNumber": "DISC-2026-0004",
+      "category": "EXAMINATION_INFRACTION",
+      "status": "CLOSED_RETENTION_ACTIVE",
+      "stage": 9,
+      "stageName": "Case Closed (Retention Countdown Active)",
+      "incidentDate": "2026-07-15T10:00:00.000Z",
+      "incidentLocation": "Exam Hall E-201",
+      "reportingAuthority": "Invigilator Prof. S. Ramesh",
+      "studentId": "STU-2026-1120",
+      "studentRoll": "24CSE1120",
+      "studentName": "Priya Sundaram",
+      "studentEmail": "priya.24cse1120@vignan.ac.in",
+      "studentDept": "Computer Science & Engineering",
+      "witnesses": [
+        "Hall Superintendent Dr. Lakshmi"
+      ],
+      "allegationSummary": "Inadvertent possession of blank scrap paper containing uncertified arithmetic formulas during Semester 1 Physics exam.",
+      "evidenceItems": [
+        {
+          "id": "EVD-31",
+          "title": "Confiscated Scrap Paper Specimen",
+          "type": "Physical Evidence Specimen",
+          "timestamp": "2026-07-15T10:15:00Z"
+        }
+      ],
+      "createdAt": "2026-07-13T06:21:57.317Z",
+      "closedAt": "2026-08-12T06:21:57.317Z",
+      "retentionExpiryDate": "2029-08-12T06:21:57.317Z",
+      "guardrailFlags": {
+        "guiltDetermined": false,
+        "sanctionRecommended": false,
+        "disciplinaryShieldActive": true
+      }
+    }
+  ],
+  "checklistItems": {
+    "DISC-2026-0001": [
+      {
+        "id": "STEP-1-INCIDENT-REGISTERED",
+        "stepNumber": 1,
+        "name": "Incident Report Registered",
+        "description": "Capture incident details, date, location, persons involved, and assign unique case ID.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-11T06:21:57.313Z",
+        "gateRequirement": "Initial filing mandatory to initiate any proceeding"
+      },
+      {
+        "id": "STEP-2-POLICY-CLASSIFIED",
+        "stepNumber": 2,
+        "name": "Offence Category & Jurisdiction Identified",
+        "description": "Classified under Academic Dishonesty & Malpractice (POL-ACAD-01). Decision authority: Dean of Academic Affairs & Standing Academic Integrity Committee.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-11T06:21:57.315Z",
+        "gateRequirement": "Procedure binds committee to statutory timeline"
+      },
+      {
+        "id": "STEP-3-NOTICE-ISSUED",
+        "stepNumber": 3,
+        "name": "Notice of Allegation Dispatched",
+        "description": "Formal notice issued with 3-day dispatch window and recorded delivery.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-10T06:21:57.315Z",
+        "gateRequirement": "Student must receive official notice before any further action"
+      },
+      {
+        "id": "STEP-4-STUDENT-RESPONSE",
+        "stepNumber": 4,
+        "name": "Right to be Heard (Response Window)",
+        "description": "Student afforded 5 days to submit written response, statements, and witness list.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Mandatory due-process gate: Committee cannot meet without hearing response or expiry of window"
+      },
+      {
+        "id": "STEP-5-COMMITTEE-CONSTITUTION",
+        "stepNumber": 5,
+        "name": "Committee Constitution & Hearing Convened",
+        "description": "Quorum of min 3 authorized members convened for mandatory formal hearing.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Quorum verification required before deliberation"
+      },
+      {
+        "id": "STEP-6-DECISION-RECORDED",
+        "stepNumber": 6,
+        "name": "Findings & Sanction Recorded with Reasoned Order",
+        "description": "Authorized decision recorded with findings of fact, evidence references, and sanction within policy limits.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "GATE LOCKED: Cannot record decision until Steps 3, 4, and 5 are completed!"
+      },
+      {
+        "id": "STEP-7-APPEAL-COMMUNICATED",
+        "stepNumber": 7,
+        "name": "Decision Order & Appeal Route Communicated",
+        "description": "Formal order served with 14-day statutory appeal window to the Appellate Authority.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Notice of appeal route is a mandatory constitutional right"
+      },
+      {
+        "id": "STEP-8-SANCTION-COMPLIANCE",
+        "stepNumber": 8,
+        "name": "Sanction Compliance & Verification",
+        "description": "Track fulfillment of assigned requirements (community service, fines, suspension period).",
+        "mandatory": false,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Closure requires authority verification of completion proof"
+      },
+      {
+        "id": "STEP-9-CASE-CLOSURE-RETENTION",
+        "stepNumber": 9,
+        "name": "Case Closure & Record Expiry Scheduled",
+        "description": "Case marked closed. Expungement timer initialized for 2 years retention.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Case file archived and scheduled for automatic purging under policy"
+      }
+    ],
+    "DISC-2026-0002": [
+      {
+        "id": "STEP-1-INCIDENT-REGISTERED",
+        "stepNumber": 1,
+        "name": "Incident Report Registered",
+        "description": "Capture incident details, date, location, persons involved, and assign unique case ID.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-11T06:21:57.317Z",
+        "gateRequirement": "Initial filing mandatory to initiate any proceeding"
+      },
+      {
+        "id": "STEP-2-POLICY-CLASSIFIED",
+        "stepNumber": 2,
+        "name": "Offence Category & Jurisdiction Identified",
+        "description": "Classified under Hostel & Campus Misconduct (POL-CAMP-02). Decision authority: Chief Warden & Dean of Student Welfare.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-11T06:21:57.317Z",
+        "gateRequirement": "Procedure binds committee to statutory timeline"
+      },
+      {
+        "id": "STEP-3-NOTICE-ISSUED",
+        "stepNumber": 3,
+        "name": "Notice of Allegation Dispatched",
+        "description": "Formal notice issued with 2-day dispatch window and recorded delivery.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-08T06:21:57.317Z",
+        "gateRequirement": "Student must receive official notice before any further action"
+      },
+      {
+        "id": "STEP-4-STUDENT-RESPONSE",
+        "stepNumber": 4,
+        "name": "Right to be Heard (Response Window)",
+        "description": "Student afforded 3 days to submit written response, statements, and witness list.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-09T06:21:57.317Z",
+        "gateRequirement": "Mandatory due-process gate: Committee cannot meet without hearing response or expiry of window"
+      },
+      {
+        "id": "STEP-5-COMMITTEE-CONSTITUTION",
+        "stepNumber": 5,
+        "name": "Committee Constitution & Hearing Convened",
+        "description": "Quorum of min 2 authorized members convened.",
+        "mandatory": false,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-10T18:21:57.317Z",
+        "gateRequirement": "Quorum verification required before deliberation"
+      },
+      {
+        "id": "STEP-6-DECISION-RECORDED",
+        "stepNumber": 6,
+        "name": "Findings & Sanction Recorded with Reasoned Order",
+        "description": "Authorized decision recorded with findings of fact, evidence references, and sanction within policy limits.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "GATE LOCKED: Cannot record decision until Steps 3, 4, and 5 are completed!"
+      },
+      {
+        "id": "STEP-7-APPEAL-COMMUNICATED",
+        "stepNumber": 7,
+        "name": "Decision Order & Appeal Route Communicated",
+        "description": "Formal order served with 10-day statutory appeal window to the Appellate Authority.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Notice of appeal route is a mandatory constitutional right"
+      },
+      {
+        "id": "STEP-8-SANCTION-COMPLIANCE",
+        "stepNumber": 8,
+        "name": "Sanction Compliance & Verification",
+        "description": "Track fulfillment of assigned requirements (community service, fines, suspension period).",
+        "mandatory": false,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Closure requires authority verification of completion proof"
+      },
+      {
+        "id": "STEP-9-CASE-CLOSURE-RETENTION",
+        "stepNumber": 9,
+        "name": "Case Closure & Record Expiry Scheduled",
+        "description": "Case marked closed. Expungement timer initialized for 1 years retention.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Case file archived and scheduled for automatic purging under policy"
+      }
+    ],
+    "DISC-2026-0003": [
+      {
+        "id": "STEP-1-INCIDENT-REGISTERED",
+        "stepNumber": 1,
+        "name": "Incident Report Registered",
+        "description": "Capture incident details, date, location, persons involved, and assign unique case ID.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-04T06:21:57.317Z",
+        "gateRequirement": "Initial filing mandatory to initiate any proceeding"
+      },
+      {
+        "id": "STEP-2-POLICY-CLASSIFIED",
+        "stepNumber": 2,
+        "name": "Offence Category & Jurisdiction Identified",
+        "description": "Classified under Hostel & Campus Misconduct (POL-CAMP-02). Decision authority: Chief Warden & Dean of Student Welfare.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-05T06:21:57.317Z",
+        "gateRequirement": "Procedure binds committee to statutory timeline"
+      },
+      {
+        "id": "STEP-3-NOTICE-ISSUED",
+        "stepNumber": 3,
+        "name": "Notice of Allegation Dispatched",
+        "description": "Formal notice issued with 2-day dispatch window and recorded delivery.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-06T06:21:57.317Z",
+        "gateRequirement": "Student must receive official notice before any further action"
+      },
+      {
+        "id": "STEP-4-STUDENT-RESPONSE",
+        "stepNumber": 4,
+        "name": "Right to be Heard (Response Window)",
+        "description": "Student afforded 3 days to submit written response, statements, and witness list.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-07T06:21:57.317Z",
+        "gateRequirement": "Mandatory due-process gate: Committee cannot meet without hearing response or expiry of window"
+      },
+      {
+        "id": "STEP-5-COMMITTEE-CONSTITUTION",
+        "stepNumber": 5,
+        "name": "Committee Constitution & Hearing Convened",
+        "description": "Quorum of min 2 authorized members convened.",
+        "mandatory": false,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-08T06:21:57.317Z",
+        "gateRequirement": "Quorum verification required before deliberation"
+      },
+      {
+        "id": "STEP-6-DECISION-RECORDED",
+        "stepNumber": 6,
+        "name": "Findings & Sanction Recorded with Reasoned Order",
+        "description": "Authorized decision recorded with findings of fact, evidence references, and sanction within policy limits.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-09T06:21:57.317Z",
+        "gateRequirement": "GATE LOCKED: Cannot record decision until Steps 3, 4, and 5 are completed!"
+      },
+      {
+        "id": "STEP-7-APPEAL-COMMUNICATED",
+        "stepNumber": 7,
+        "name": "Decision Order & Appeal Route Communicated",
+        "description": "Formal order served with 10-day statutory appeal window to the Appellate Authority.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-10T06:21:57.317Z",
+        "gateRequirement": "Notice of appeal route is a mandatory constitutional right"
+      },
+      {
+        "id": "STEP-8-SANCTION-COMPLIANCE",
+        "stepNumber": 8,
+        "name": "Sanction Compliance & Verification",
+        "description": "Track fulfillment of assigned requirements (community service, fines, suspension period).",
+        "mandatory": false,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Closure requires authority verification of completion proof"
+      },
+      {
+        "id": "STEP-9-CASE-CLOSURE-RETENTION",
+        "stepNumber": 9,
+        "name": "Case Closure & Record Expiry Scheduled",
+        "description": "Case marked closed. Expungement timer initialized for 1 years retention.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Case file archived and scheduled for automatic purging under policy"
+      }
+    ],
+    "DISC-2026-0004": [
+      {
+        "id": "STEP-1-INCIDENT-REGISTERED",
+        "stepNumber": 1,
+        "name": "Incident Report Registered",
+        "description": "Capture incident details, date, location, persons involved, and assign unique case ID.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-08-12T06:21:57.317Z",
+        "gateRequirement": "Initial filing mandatory to initiate any proceeding"
+      },
+      {
+        "id": "STEP-2-POLICY-CLASSIFIED",
+        "stepNumber": 2,
+        "name": "Offence Category & Jurisdiction Identified",
+        "description": "Classified under Semester Examination Malpractice (POL-EXAM-04). Decision authority: Examination Malpractice Committee & Controller of Examinations.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-08-12T06:21:57.317Z",
+        "gateRequirement": "Procedure binds committee to statutory timeline"
+      },
+      {
+        "id": "STEP-3-NOTICE-ISSUED",
+        "stepNumber": 3,
+        "name": "Notice of Allegation Dispatched",
+        "description": "Formal notice issued with 2-day dispatch window and recorded delivery.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-08-12T06:21:57.317Z",
+        "gateRequirement": "Student must receive official notice before any further action"
+      },
+      {
+        "id": "STEP-4-STUDENT-RESPONSE",
+        "stepNumber": 4,
+        "name": "Right to be Heard (Response Window)",
+        "description": "Student afforded 4 days to submit written response, statements, and witness list.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-08-12T06:21:57.317Z",
+        "gateRequirement": "Mandatory due-process gate: Committee cannot meet without hearing response or expiry of window"
+      },
+      {
+        "id": "STEP-5-COMMITTEE-CONSTITUTION",
+        "stepNumber": 5,
+        "name": "Committee Constitution & Hearing Convened",
+        "description": "Quorum of min 3 authorized members convened for mandatory formal hearing.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-08-12T06:21:57.317Z",
+        "gateRequirement": "Quorum verification required before deliberation"
+      },
+      {
+        "id": "STEP-6-DECISION-RECORDED",
+        "stepNumber": 6,
+        "name": "Findings & Sanction Recorded with Reasoned Order",
+        "description": "Authorized decision recorded with findings of fact, evidence references, and sanction within policy limits.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-08-12T06:21:57.317Z",
+        "gateRequirement": "GATE LOCKED: Cannot record decision until Steps 3, 4, and 5 are completed!"
+      },
+      {
+        "id": "STEP-7-APPEAL-COMMUNICATED",
+        "stepNumber": 7,
+        "name": "Decision Order & Appeal Route Communicated",
+        "description": "Formal order served with 14-day statutory appeal window to the Appellate Authority.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-08-12T06:21:57.317Z",
+        "gateRequirement": "Notice of appeal route is a mandatory constitutional right"
+      },
+      {
+        "id": "STEP-8-SANCTION-COMPLIANCE",
+        "stepNumber": 8,
+        "name": "Sanction Compliance & Verification",
+        "description": "Track fulfillment of assigned requirements (community service, fines, suspension period).",
+        "mandatory": false,
+        "status": "COMPLETED",
+        "completedAt": "2026-08-12T06:21:57.317Z",
+        "gateRequirement": "Closure requires authority verification of completion proof"
+      },
+      {
+        "id": "STEP-9-CASE-CLOSURE-RETENTION",
+        "stepNumber": 9,
+        "name": "Case Closure & Record Expiry Scheduled",
+        "description": "Case marked closed. Expungement timer initialized for 3 years retention.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-08-12T06:21:57.317Z",
+        "gateRequirement": "Case file archived and scheduled for automatic purging under policy"
+      }
+    ],
+    "DISC-2026-0005": [
+      {
+        "id": "STEP-1-INCIDENT-REGISTERED",
+        "stepNumber": 1,
+        "name": "Incident Report Registered",
+        "description": "Capture incident details, date, location, persons involved, and assign unique case ID.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-11T07:14:05.974Z",
+        "gateRequirement": "Initial filing mandatory to initiate any proceeding"
+      },
+      {
+        "id": "STEP-2-POLICY-CLASSIFIED",
+        "stepNumber": 2,
+        "name": "Offence Category & Jurisdiction Identified",
+        "description": "Classified under Semester Examination Malpractice (POL-EXAM-04). Decision authority: Examination Malpractice Committee & Controller of Examinations.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-11T07:14:05.974Z",
+        "gateRequirement": "Procedure binds committee to statutory timeline"
+      },
+      {
+        "id": "STEP-3-NOTICE-ISSUED",
+        "stepNumber": 3,
+        "name": "Notice of Allegation Dispatched",
+        "description": "Formal notice issued with 2-day dispatch window and recorded delivery.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Student must receive official notice before any further action"
+      },
+      {
+        "id": "STEP-4-STUDENT-RESPONSE",
+        "stepNumber": 4,
+        "name": "Right to be Heard (Response Window)",
+        "description": "Student afforded 4 days to submit written response, statements, and witness list.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Mandatory due-process gate: Committee cannot meet without hearing response or expiry of window"
+      },
+      {
+        "id": "STEP-5-COMMITTEE-CONSTITUTION",
+        "stepNumber": 5,
+        "name": "Committee Constitution & Hearing Convened",
+        "description": "Quorum of min 3 authorized members convened for mandatory formal hearing.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Quorum verification required before deliberation"
+      },
+      {
+        "id": "STEP-6-DECISION-RECORDED",
+        "stepNumber": 6,
+        "name": "Findings & Sanction Recorded with Reasoned Order",
+        "description": "Authorized decision recorded with findings of fact, evidence references, and sanction within policy limits.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "GATE LOCKED: Cannot record decision until Steps 3, 4, and 5 are completed!"
+      },
+      {
+        "id": "STEP-7-APPEAL-COMMUNICATED",
+        "stepNumber": 7,
+        "name": "Decision Order & Appeal Route Communicated",
+        "description": "Formal order served with 14-day statutory appeal window to the Appellate Authority.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Notice of appeal route is a mandatory constitutional right"
+      },
+      {
+        "id": "STEP-8-SANCTION-COMPLIANCE",
+        "stepNumber": 8,
+        "name": "Sanction Compliance & Verification",
+        "description": "Track fulfillment of assigned requirements (community service, fines, suspension period).",
+        "mandatory": false,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Closure requires authority verification of completion proof"
+      },
+      {
+        "id": "STEP-9-CASE-CLOSURE-RETENTION",
+        "stepNumber": 9,
+        "name": "Case Closure & Record Expiry Scheduled",
+        "description": "Case marked closed. Expungement timer initialized for 3 years retention.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Case file archived and scheduled for automatic purging under policy"
+      }
+    ]
+  },
+  "notices": [
+    {
+      "noticeId": "NOT-2026-0001-01",
+      "caseId": "DISC-2026-0001",
+      "noticeType": "NOTICE_OF_ALLEGATION",
+      "subject": "Official Disciplinary Notice: Report of Academic Irregularity (CS302 Practical)",
+      "referenceNumber": "DISC/NOTICE/2026/001",
+      "recipientEmail": "rohan.22bce1048@vignan.ac.in",
+      "recipientName": "Rohan Sharma (22BCE1048)",
+      "issuedBy": "Disciplinary Administrator (Office of Academic Affairs)",
+      "issuedAt": "2026-09-10T06:21:57.315Z",
+      "deliveryStatus": "ACKNOWLEDGED",
+      "acknowledgedAt": "2026-09-11T07:40:37.557Z",
+      "contentBody": "Dear Rohan Sharma,\n\nThis is an official communication from the Disciplinary Office of Vignan's Institute. A formal incident report has been registered regarding an alleged procedural irregularity during the CS302 Practical Examination on 08-Sept-2026.\n\nIn accordance with Vignan Institutional Statute Sec 14(B), you are entitled to procedural due process and the Right to be Heard. You are requested to review the allegation details and submit your written response along with any supporting explanations within 5 working days.\n\nPlease log into the EduGuard Student Portal to record your receipt and submit your statement.\n\nSd/-\nDisciplinary Office",
+      "appealInfo": "Appeals are governed by Statute Sec 14(B) following committee findings."
+    },
+    {
+      "noticeId": "NOT-2026-0002-01",
+      "caseId": "DISC-2026-0002",
+      "noticeType": "NOTICE_OF_ALLEGATION",
+      "subject": "Procedural Notice: Hostel Code of Conduct Irregularity",
+      "referenceNumber": "DISC/NOTICE/2026/002",
+      "recipientEmail": "ananya.23ece1092@vignan.ac.in",
+      "recipientName": "Ananya Verma (23ECE1092)",
+      "issuedBy": "Hostel & Campus Disciplinary Sub-Committee",
+      "issuedAt": "2026-09-08T06:21:57.317Z",
+      "deliveryStatus": "ACKNOWLEDGED",
+      "acknowledgedAt": "2026-09-08T18:21:57.317Z",
+      "contentBody": "Official notice regarding hostel boundary timings on 04-Sept-2026. Right to reply invoked.",
+      "appealInfo": "Appeals are open to the Chief Warden."
+    }
+  ],
+  "submissions": [
+    {
+      "submissionId": "SUB-2026-0002-01",
+      "caseId": "DISC-2026-0002",
+      "submittedBy": "Ananya Verma (23ECE1092)",
+      "submittedAt": "2026-09-09T06:21:57.317Z",
+      "statementText": "I respectfully acknowledge arriving after the designated 21:30 PM curfew. Our department robotics team had an emergency test run in the Central Instrumentation Facility that stretched unexpectedly. I had informed my department mentor Dr. Murthy via email at 21:05 PM. When security stopped me, I was distressed and forgot my wallet with ID in the lab. I apologize sincerely for my impatient tone with Guard Ramana and request that the academic context be taken into consideration.",
+      "attachments": [
+        {
+          "name": "Dr_Murthy_Email_Confirmation.pdf",
+          "size": "240 KB"
+        },
+        {
+          "name": "Robotics_Lab_Bench_Signout_Sheet.png",
+          "size": "1.2 MB"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "decisionId": "DEC-2026-0003-01",
+      "caseId": "DISC-2026-0003",
+      "committeeMembers": [
+        "Er. B. Naidu (Superintendent)",
+        "Dr. M. K. Rao (Dean Student Welfare)"
+      ],
+      "findingSummary": "The committee noted the student acknowledged the safety omission promptly and demonstrated regret. In accordance with Campus Code Reg 8, safety enforcement requires educational restitution.",
+      "sanctionImposed": "Mandatory Campus Community Service (10 - 40 Hours)",
+      "sanctionDetails": "15 Hours of Community Service in Central Campus Workshop Safety Audit & Cataloging",
+      "appealRoute": "Dean of Academic Administration, Vignan Institute",
+      "appealDeadline": "2026-09-16T06:21:57.317Z",
+      "recordedAt": "2026-09-06T06:21:57.317Z",
+      "recordedBy": "Dr. M. K. Rao (Dean Student Welfare)"
+    }
+  ],
+  "sanctions": [
+    {
+      "sanctionId": "SANC-2026-0003-01",
+      "caseId": "DISC-2026-0003",
+      "title": "15 Hours Workshop Safety Audit Community Service",
+      "totalHoursRequired": 15,
+      "hoursCompleted": 9,
+      "status": "IN_PROGRESS",
+      "assignedAuthority": "Workshop Superintendent Er. B. Naidu",
+      "dueDate": "2026-09-21T06:21:57.317Z",
+      "milestones": [
+        {
+          "title": "Toolbox Safety Inventory (5h)",
+          "completed": true,
+          "verifiedBy": "Er. B. Naidu"
+        },
+        {
+          "title": "Safety Hazard Placard Replacement (4h)",
+          "completed": true,
+          "verifiedBy": "Er. B. Naidu"
+        },
+        {
+          "title": "First Aid Inspection & Log Documentation (6h)",
+          "completed": false,
+          "verifiedBy": null
+        }
+      ]
+    }
+  ],
+  "auditChain": {
+    "DISC-2026-0001": [
+      {
+        "id": "TX-1789107717316-KIDMP",
+        "index": 0,
+        "caseId": "DISC-2026-0001",
+        "timestamp": "2026-09-11T06:21:57.315Z",
+        "actor": "Dr. S. K. Narayanan (Reporting Faculty)",
+        "action": "INCIDENT_INTAKE_REGISTERED",
+        "payload": {
+          "caseId": "DISC-2026-0001",
+          "category": "ACADEMIC_MALPRACTICE",
+          "rollNumber": "22BCE1048"
+        },
+        "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "0bdc368629ccc0267029b757a7b87ede0f01018260d6ceb85baf3e0835e2886c"
+      },
+      {
+        "id": "TX-1789107717316-NKX0I",
+        "index": 1,
+        "caseId": "DISC-2026-0001",
+        "timestamp": "2026-09-11T06:21:57.316Z",
+        "actor": "Disciplinary Administrator (Office of Academic Affairs)",
+        "action": "POLICY_CLASSIFICATION_ASSIGNED",
+        "payload": {
+          "policyCode": "POL-ACAD-01",
+          "jurisdiction": "Standing Academic Integrity Committee"
+        },
+        "previousHash": "0bdc368629ccc0267029b757a7b87ede0f01018260d6ceb85baf3e0835e2886c",
+        "hash": "3a3c4e5496933b632dc3d9ea3ac1bd7ed77c54280b34bfab43f0a2d35e50d810"
+      },
+      {
+        "id": "TX-1789107717317-RMUM6",
+        "index": 2,
+        "caseId": "DISC-2026-0001",
+        "timestamp": "2026-09-11T06:21:57.316Z",
+        "actor": "Disciplinary Administrator",
+        "action": "FORMAL_NOTICE_DISPATCHED",
+        "payload": {
+          "noticeId": "NOT-2026-0001-01",
+          "type": "NOTICE_OF_ALLEGATION",
+          "recipient": "rohan.22bce1048@vignan.ac.in"
+        },
+        "previousHash": "3a3c4e5496933b632dc3d9ea3ac1bd7ed77c54280b34bfab43f0a2d35e50d810",
+        "hash": "98c2aec4ab75e156cc060c4d3e91c1ce51b172c165d87f7d77b19d98ace333af"
+      },
+      {
+        "id": "TX-1789112435247-KKCPY",
+        "index": 3,
+        "caseId": "DISC-2026-0001",
+        "timestamp": "2026-09-11T07:40:35.247Z",
+        "actor": "Student (22BCE1048)",
+        "action": "NOTICE_RECEIPT_ACKNOWLEDGED",
+        "payload": {
+          "noticeId": "NOT-2026-0001-01",
+          "acknowledgedAt": "2026-09-11T07:40:35.247Z",
+          "deliveryMethod": "EduGuard Verified Digital Portal"
+        },
+        "previousHash": "98c2aec4ab75e156cc060c4d3e91c1ce51b172c165d87f7d77b19d98ace333af",
+        "hash": "3cf8aad2246a79feb91ca71243829355d232fcfe05897c3ddce6f4742acee480"
+      },
+      {
+        "id": "TX-1789112437557-L4NQL",
+        "index": 4,
+        "caseId": "DISC-2026-0001",
+        "timestamp": "2026-09-11T07:40:37.557Z",
+        "actor": "Student (22BCE1048)",
+        "action": "NOTICE_RECEIPT_ACKNOWLEDGED",
+        "payload": {
+          "noticeId": "NOT-2026-0001-01",
+          "acknowledgedAt": "2026-09-11T07:40:37.557Z",
+          "deliveryMethod": "EduGuard Verified Digital Portal"
+        },
+        "previousHash": "3cf8aad2246a79feb91ca71243829355d232fcfe05897c3ddce6f4742acee480",
+        "hash": "31e7a6f125e703f775b33219d0a71b7bc696925ba41fac400efa35a21f71c1c4"
+      }
+    ],
+    "DISC-2026-0002": [
+      {
+        "id": "TX-1789107717317-0J1EA",
+        "index": 0,
+        "caseId": "DISC-2026-0002",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Resident Warden Mrs. Geetha Rao",
+        "action": "INCIDENT_INTAKE_REGISTERED",
+        "payload": {
+          "caseId": "DISC-2026-0002",
+          "category": "CAMPUS_MISCONDUCT",
+          "rollNumber": "23ECE1092"
+        },
+        "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "6bb746f54cf4e0359529f609ddb85ad3f4fb152db82d2b9d5f8bb0f01078b95e"
+      },
+      {
+        "id": "TX-1789107717317-7DKOS",
+        "index": 1,
+        "caseId": "DISC-2026-0002",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Disciplinary Administrator",
+        "action": "POLICY_CLASSIFICATION_ASSIGNED",
+        "payload": {
+          "policyCode": "POL-CAMP-02",
+          "authority": "Hostel & Campus Disciplinary Sub-Committee"
+        },
+        "previousHash": "6bb746f54cf4e0359529f609ddb85ad3f4fb152db82d2b9d5f8bb0f01078b95e",
+        "hash": "e946e0d8d8e63318f2b1a3b486a361dd7eb7097168ee356162e585a65d79bdf3"
+      },
+      {
+        "id": "TX-1789107717317-DNRNP",
+        "index": 2,
+        "caseId": "DISC-2026-0002",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Disciplinary Administrator",
+        "action": "FORMAL_NOTICE_DISPATCHED",
+        "payload": {
+          "noticeId": "NOT-2026-0002-01",
+          "type": "NOTICE_OF_ALLEGATION"
+        },
+        "previousHash": "e946e0d8d8e63318f2b1a3b486a361dd7eb7097168ee356162e585a65d79bdf3",
+        "hash": "aabcaa94ea513bdae7cb0a9405bc4e70cae21b6f4c60dd1f7c387a9c69d6c884"
+      },
+      {
+        "id": "TX-1789107717317-8KQIK",
+        "index": 3,
+        "caseId": "DISC-2026-0002",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Student Ananya Verma (23ECE1092)",
+        "action": "NOTICE_RECEIPT_ACKNOWLEDGED",
+        "payload": {
+          "noticeId": "NOT-2026-0002-01",
+          "timestamp": "2026-09-08T18:21:57.317Z"
+        },
+        "previousHash": "aabcaa94ea513bdae7cb0a9405bc4e70cae21b6f4c60dd1f7c387a9c69d6c884",
+        "hash": "7f4dd0f62d50f16d99296891f0a732e7a56746ff90601c664356daedf21b1d8c"
+      },
+      {
+        "id": "TX-1789107717317-YR6U8",
+        "index": 4,
+        "caseId": "DISC-2026-0002",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Student Ananya Verma (23ECE1092)",
+        "action": "STATEMENT_AND_EVIDENCE_SUBMITTED",
+        "payload": {
+          "submissionId": "SUB-2026-0002-01",
+          "attachmentCount": 2
+        },
+        "previousHash": "7f4dd0f62d50f16d99296891f0a732e7a56746ff90601c664356daedf21b1d8c",
+        "hash": "ff6372d1e2e17203ed762ee88bdfb4b7222746a412dd2d6168de071f2a388249"
+      },
+      {
+        "id": "TX-1789107717317-JQT9G",
+        "index": 5,
+        "caseId": "DISC-2026-0002",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Committee Chair (Prof. R. Krishna)",
+        "action": "COMMITTEE_QUORUM_VERIFIED",
+        "payload": {
+          "presentMembers": [
+            "Prof. R. Krishna",
+            "Dr. Geetha Rao",
+            "Warden K. Chandra"
+          ],
+          "quorumCount": 3
+        },
+        "previousHash": "ff6372d1e2e17203ed762ee88bdfb4b7222746a412dd2d6168de071f2a388249",
+        "hash": "8bca7379adf366014a9937e5286725955781cee2737138a00a8b18c49838d26c"
+      }
+    ],
+    "DISC-2026-0003": [
+      {
+        "id": "TX-1789107717317-0C8QL",
+        "index": 0,
+        "caseId": "DISC-2026-0003",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Er. B. Naidu",
+        "action": "INCIDENT_INTAKE_REGISTERED",
+        "payload": {
+          "caseId": "DISC-2026-0003"
+        },
+        "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "926199ddb512ad7808b36409718d1cec74fce8efbb9fefb6dee346627518e90b"
+      },
+      {
+        "id": "TX-1789107717317-VYKAW",
+        "index": 1,
+        "caseId": "DISC-2026-0003",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Disciplinary Admin",
+        "action": "NOTICE_OF_ALLEGATION_SERVED",
+        "payload": {
+          "student": "21MECH1015"
+        },
+        "previousHash": "926199ddb512ad7808b36409718d1cec74fce8efbb9fefb6dee346627518e90b",
+        "hash": "568c2614144e03de0391421b76858cca1bc479653eeb52d9629af89d2942dc8a"
+      },
+      {
+        "id": "TX-1789107717317-EHN8E",
+        "index": 2,
+        "caseId": "DISC-2026-0003",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Student Vikram Patel",
+        "action": "WRITTEN_REPLY_RECORDED",
+        "payload": {
+          "replyLength": 180
+        },
+        "previousHash": "568c2614144e03de0391421b76858cca1bc479653eeb52d9629af89d2942dc8a",
+        "hash": "b7590c6dc485f821f0452b3c6907c9e98603e9fc2cab42ffc7bbd5fa51839c01"
+      },
+      {
+        "id": "TX-1789107717317-9GHM9",
+        "index": 3,
+        "caseId": "DISC-2026-0003",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Committee Chair",
+        "action": "FORMAL_DECISION_RECORDED",
+        "payload": {
+          "sanction": "Community Service (15 hrs)"
+        },
+        "previousHash": "b7590c6dc485f821f0452b3c6907c9e98603e9fc2cab42ffc7bbd5fa51839c01",
+        "hash": "82dffd3d6cad699b57caa59e9405203d114768e03c45cacc72696a97bd781ed7"
+      },
+      {
+        "id": "TX-1789107717317-7GJ6C",
+        "index": 4,
+        "caseId": "DISC-2026-0003",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Compliance Officer",
+        "action": "SANCTION_TRACKER_INITIALIZED",
+        "payload": {
+          "totalHours": 15
+        },
+        "previousHash": "82dffd3d6cad699b57caa59e9405203d114768e03c45cacc72696a97bd781ed7",
+        "hash": "18f8d9c81ecd7b30c7bb75a415737059a84cd17351925a902468e7bc943f3a28"
+      }
+    ],
+    "DISC-2026-0004": [
+      {
+        "id": "TX-1789107717317-YYM1G",
+        "index": 0,
+        "caseId": "DISC-2026-0004",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Invigilator Prof. S. Ramesh",
+        "action": "INCIDENT_INTAKE_REGISTERED",
+        "payload": {
+          "caseId": "DISC-2026-0004"
+        },
+        "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "eedc7ada55063b3ddeb04908f818dd0c33bff91fe097d565e112bf50124c39ae"
+      },
+      {
+        "id": "TX-1789107717318-ZHKMP",
+        "index": 1,
+        "caseId": "DISC-2026-0004",
+        "timestamp": "2026-09-11T06:21:57.317Z",
+        "actor": "Disciplinary Administrator",
+        "action": "FULL_PROCEDURAL_CYCLE_COMPLETED",
+        "payload": {
+          "status": "CLOSED"
+        },
+        "previousHash": "eedc7ada55063b3ddeb04908f818dd0c33bff91fe097d565e112bf50124c39ae",
+        "hash": "81853e6428b68a501651efd69910baf5c70a59b65af97e730ddc4f3fac90c963"
+      },
+      {
+        "id": "TX-1789107717318-Q9NAT",
+        "index": 2,
+        "caseId": "DISC-2026-0004",
+        "timestamp": "2026-09-11T06:21:57.318Z",
+        "actor": "Institutional Records Custodian",
+        "action": "RECORD_RETENTION_TIMER_LOCKED",
+        "payload": {
+          "policyYears": 3
+        },
+        "previousHash": "81853e6428b68a501651efd69910baf5c70a59b65af97e730ddc4f3fac90c963",
+        "hash": "9a2c3ac3d246d9266a18360626a7703582ba87490d00d367682c51eecc0e0230"
+      }
+    ],
+    "DISC-2026-0005": [
+      {
+        "id": "TX-1789110845975-LDH7A",
+        "index": 0,
+        "caseId": "DISC-2026-0005",
+        "timestamp": "2026-09-11T07:14:05.974Z",
+        "actor": "Hall Superintendent Dr. V. Narayana",
+        "action": "INCIDENT_INTAKE_REGISTERED",
+        "payload": {
+          "caseId": "DISC-2026-0005",
+          "category": "EXAMINATION_INFRACTION",
+          "studentRoll": "24CSE1120",
+          "statute": "Vignan Examination Ordinance Sec 22",
+          "noticeDays": 2,
+          "responseDays": 4
+        },
+        "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "4c7dfabfd74144fed2bc224db62b65dc8cac70af1e7bed038eb77861c89915a4"
+      }
+    ]
+  },
+  "precedents": [
+    {
+      "precedentId": "PREC-2024-0012",
+      "category": "ACADEMIC_MALPRACTICE",
+      "incidentSummary": "Submission of cloned open-source GitHub repository for Final Year Capstone Project without attribution.",
+      "factsConsidered": "First-time offence; student admitted immediately upon enquiry; no commercial code compromised.",
+      "mitigatingFactors": [
+        "First-time infraction",
+        "Cooperative demeanor",
+        "Voluntary admission before committee"
+      ],
+      "aggravatingFactors": [
+        "Affects major degree evaluation milestone"
+      ],
+      "finalSanction": "Zero Marks in Component & Mandatory Resubmission under Continuous Faculty Supervision",
+      "decisionAuthority": "Standing Academic Integrity Committee",
+      "academicYear": "2023-2024"
+    },
+    {
+      "precedentId": "PREC-2024-0038",
+      "category": "ACADEMIC_MALPRACTICE",
+      "incidentSummary": "Possession of micro-cheat sheet during Mid-Semester Database Systems examination.",
+      "factsConsidered": "Sheet recovered prior to answering; invigilator reported immediately; invigilator statement corroborated.",
+      "mitigatingFactors": [
+        "Unused notes",
+        "Apology tendered in writing"
+      ],
+      "aggravatingFactors": [
+        "Attempted concealment in exam hall"
+      ],
+      "finalSanction": "Cancellation of Subject Paper & Written Reprimand on Record",
+      "decisionAuthority": "Standing Academic Integrity Committee",
+      "academicYear": "2023-2024"
+    },
+    {
+      "precedentId": "PREC-2025-0004",
+      "category": "CAMPUS_MISCONDUCT",
+      "incidentSummary": "Damage to hostel common room LED display monitor during late-night recreational argument.",
+      "factsConsidered": "Accidental breakage during physical scuffle; two hostel inmates involved.",
+      "mitigatingFactors": [
+        "Students reported damage promptly to resident warden",
+        "Both offered joint restitution"
+      ],
+      "aggravatingFactors": [
+        "Hostel curfew violation"
+      ],
+      "finalSanction": "Full Financial Restitution (50% each) + 20 Hours Campus Library Community Service",
+      "decisionAuthority": "Chief Warden & Dean of Student Welfare",
+      "academicYear": "2024-2025"
+    },
+    {
+      "precedentId": "PREC-2025-0019",
+      "category": "ANTI_RAGGING_HARASSMENT",
+      "incidentSummary": "Coercive verbal demands and unauthorized night summoning of junior hostel residents.",
+      "factsConsidered": "First-year students filed anonymous complaint via anti-ragging box; proctorial enquiry validated time logs.",
+      "mitigatingFactors": [
+        "No physical assault or battery occurred"
+      ],
+      "aggravatingFactors": [
+        "Hostel power dynamic exploitation",
+        "Repetitive over 3 consecutive nights"
+      ],
+      "finalSanction": "Hostel Eviction with Immediate Effect + 1 Semester Suspension of Sports Privileges",
+      "decisionAuthority": "University Anti-Ragging Cell",
+      "academicYear": "2024-2025"
+    },
+    {
+      "precedentId": "PREC-2025-0027",
+      "category": "EXAMINATION_INFRACTION",
+      "incidentSummary": "Unauthorized programmable smart watch detected transmitting exam question photo during University End-Semester exam.",
+      "factsConsidered": "Device confiscated during exam; photo sent via messaging app; external collusion suspected.",
+      "mitigatingFactors": [
+        "None presented"
+      ],
+      "aggravatingFactors": [
+        "High premeditation",
+        "Digital transmission across exam perimeter"
+      ],
+      "finalSanction": "Cancellation of Entire Semester Results & 1-Year University Examination Debarment",
+      "decisionAuthority": "Examination Malpractice Committee",
+      "academicYear": "2024-2025"
+    }
+  ],
+  "students": [
+    {
+      "studentId": "STU-2026-1048",
+      "rollNumber": "22BCE1048",
+      "fullName": "Rohan Sharma",
+      "email": "rohan.22bce1048@vignan.ac.in",
+      "department": "Computer Science & Engineering",
+      "yearOfStudy": "3rd Year",
+      "gpa": "8.72",
+      "placementStatus": "Eligible (TCS, Microsoft, Cognizant)",
+      "disciplinaryShieldActive": true
+    },
+    {
+      "studentId": "STU-2026-1092",
+      "rollNumber": "23ECE1092",
+      "fullName": "Ananya Verma",
+      "email": "ananya.23ece1092@vignan.ac.in",
+      "department": "Electronics & Communication Engineering",
+      "yearOfStudy": "2nd Year",
+      "gpa": "9.10",
+      "placementStatus": "Eligible",
+      "disciplinaryShieldActive": true
+    },
+    {
+      "studentId": "STU-2026-1015",
+      "rollNumber": "21MECH1015",
+      "fullName": "Vikram Patel",
+      "email": "vikram.21mech1015@vignan.ac.in",
+      "department": "Mechanical Engineering",
+      "yearOfStudy": "4th Year",
+      "gpa": "7.85",
+      "placementStatus": "Eligible",
+      "disciplinaryShieldActive": true
+    },
+    {
+      "studentId": "STU-2026-1120",
+      "rollNumber": "24CSE1120",
+      "fullName": "Priya Sundaram",
+      "email": "priya.24cse1120@vignan.ac.in",
+      "department": "Computer Science & Engineering",
+      "yearOfStudy": "1st Year",
+      "gpa": "8.95",
+      "placementStatus": "Eligible",
+      "disciplinaryShieldActive": true
+    }
+  ]
+}

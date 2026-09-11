@@ -1,0 +1,25 @@
+{
+  "name": "eduguard-student-discipline-agent",
+  "version": "1.0.0",
+  "description": "EduGuard — Student Disciplinary Case Management Agent",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix server install && npm --prefix client install && npm --prefix client run build",
+    "start": "node server/src/index.js",
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client run dev"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "student-agent",
+    "eduguard",
+    "due-process",
+    "react",
+    "express"
+  ],
+  "author": "EduGuard Team",
+  "license": "ISC"
+}
