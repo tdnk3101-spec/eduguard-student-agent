@@ -9,6 +9,9 @@ export function Navbar({
   setActiveRole,
   currentView,
   setCurrentView,
+  currentUser,
+  onOpenAuth,
+  onLogout,
   onOpenIntake,
   onOpenSandbox,
   onReplaySplash
@@ -179,10 +182,21 @@ export function Navbar({
           >
             <TrendingUp size={14} /> Governance & Trends
           </button>
+
+          <button
+            className={`btn btn-sm ${currentView === 'auth' ? 'btn-primary' : 'btn-secondary'}`}
+            style={{ border: 'none' }}
+            onClick={() => {
+              soundFx.playClick();
+              setCurrentView('auth');
+            }}
+          >
+            <User size={14} /> Login & Signup
+          </button>
         </nav>
 
         {/* Action Controls & Role Switcher */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
           {/* Agent Sandbox Button (Ingress 44 / Egress 56,57) */}
           <button
             className="btn btn-secondary btn-sm"
@@ -208,8 +222,58 @@ export function Navbar({
             <span>New Case</span>
           </button>
 
+          {/* User Profile / Quick Login Trigger */}
+          {currentUser ? (
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.45rem',
+                background: '#f8fafc',
+                border: '1px solid #cbd5e1',
+                padding: '0.25rem 0.5rem',
+                borderRadius: '8px',
+                cursor: 'pointer'
+              }}
+              onClick={onOpenAuth}
+              title="Click to view user profile or switch accounts"
+            >
+              <div style={{
+                width: 24,
+                height: 24,
+                borderRadius: '50%',
+                background: '#1d4ed8',
+                color: '#ffffff',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '0.7rem',
+                fontWeight: 800
+              }}>
+                {currentUser.name ? currentUser.name.charAt(0) : 'U'}
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.1 }}>
+                <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#0f172a' }}>
+                  {currentUser.name ? currentUser.name.split(' ')[0] : 'User'}
+                </span>
+                <span style={{ fontSize: '0.6rem', color: '#64748b' }}>
+                  {currentUser.id || activeRole.toUpperCase()}
+                </span>
+              </div>
+            </div>
+          ) : (
+            <button
+              className="btn btn-secondary btn-sm"
+              onClick={onOpenAuth}
+              style={{ fontSize: '0.74rem' }}
+            >
+              <User size={13} />
+              <span>Sign In</span>
+            </button>
+          )}
+
           {/* Role Switcher Pill */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', borderLeft: '1px solid #e2e8f0', paddingLeft: '0.75rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', borderLeft: '1px solid #e2e8f0', paddingLeft: '0.65rem' }}>
             <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#64748b' }}>Role:</span>
             <select
               value={activeRole}
@@ -225,7 +289,7 @@ export function Navbar({
               style={{
                 fontSize: '0.75rem',
                 fontWeight: 600,
-                padding: '0.35rem 0.6rem',
+                padding: '0.35rem 0.55rem',
                 borderRadius: '6px',
                 border: '1px solid #cbd5e1',
                 background: '#ffffff',

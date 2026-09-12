@@ -264,5 +264,9 @@ export const api = {
   }),
   getAgent56Feed: () => request('/integrations/agent56/compliance-feed'),
   getAgent57Feed: () => request('/integrations/agent57/precedent-feed'),
-  getStudentProfilePrivacyCheck: (rollNumber) => request(`/integrations/student-profile/${rollNumber}`)
+  getStudentProfilePrivacyCheck: (rollNumber) => request(`/integrations/student-profile/${rollNumber}`),
+  sendChatMessage: (message, role, caseId) => request('/chat', {
+    method: 'POST',
+    body: JSON.stringify({ message, role, caseId })
+  })
 };

@@ -12,12 +12,24 @@ import { NoticeModal } from './components/NoticeModal';
 import { AgentSandboxModal } from './components/AgentSandboxModal';
 import { IncidentIntakeModal } from './components/IncidentIntakeModal';
 import { AgentLogo } from './components/AgentLogo';
+import { AgentChatbot } from './components/AgentChatbot';
+import { AuthDashboard } from './pages/AuthDashboard';
+import { AuthModal } from './components/AuthModal';
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
   const [activeRole, setActiveRole] = useState('admin');
   const [currentView, setCurrentView] = useState('intro');
   const [selectedCaseId, setSelectedCaseId] = useState(null);
+
+  // Authentication State
+  const [currentUser, setCurrentUser] = useState({
+    name: 'Dr. K. V. Rao',
+    role: 'admin',
+    id: 'FAC-EMP-1042',
+    dept: 'Office of Student Affairs'
+  });
+  const [showAuthModal, setShowAuthModal] = useState(false);
 
   // Modals state
   const [hashChainCaseId, setHashChainCaseId] = useState(null);
@@ -62,6 +74,9 @@ export default function App() {
           setActiveRole={setActiveRole}
           currentView={currentView}
           setCurrentView={setCurrentView}
+          currentUser={currentUser}
+          onOpenAuth={() => setShowAuthModal(true)}
+          onLogout={() => setCurrentUser(null)}
           onOpenIntake={() => setShowIntake(true)}
           onOpenSandbox={() => setShowSandbox(true)}
           onReplaySplash={handleReplaySplash}
@@ -121,6 +136,24 @@ export default function App() {
 
           {currentView === 'governance' && (
             <GovernanceReport />
+          )}
+
+          {currentView === 'auth' && (
+            <AuthDashboard
+              currentUser={currentUser}
+              onLoginSuccess={(user) => {
+                setCurrentUser(user);
+                setActiveRole(user.role);
+              }}
+              onLogout={() => setCurrentUser(null)}
+              onNavigateToRole={(role) => {
+                setActiveRole(role);
+                if (role === 'student') setCurrentView('student');
+                else if (role === 'committee') setCurrentView('committee');
+                else if (role === 'governance') setCurrentView('governance');
+                else setCurrentView('dashboard');
+              }}
+            />
           )}
         </main>
 
@@ -182,6 +215,30 @@ export default function App() {
           }}
         />
       )}
+
+      {/* Floating Agent 47 AI Advisor Chatbot */}
+      <AgentChatbot
+        activeRole={activeRole}
+        onNavigate={(view) => setCurrentView(view)}
+        onOpenIntake={() => setShowIntake(true)}
+        onOpenSandbox={() => setShowSandbox(true)}
+      />
+
+      {/* Institutional Auth Modal */}
+      <AuthModal
+        isOpen={showAuthModal}
+        onClose={() => setShowAuthModal(false)}
+        currentRole={activeRole}
+        onRoleChange={(r) => setActiveRole(r)}
+        onLoginSuccess={(user) => {
+          setCurrentUser(user);
+          setActiveRole(user.role);
+          if (user.role === 'student') setCurrentView('student');
+          else if (user.role === 'committee') setCurrentView('committee');
+          else if (user.role === 'governance') setCurrentView('governance');
+          else setCurrentView('dashboard');
+        }}
+      />
     </div>
   );
 }

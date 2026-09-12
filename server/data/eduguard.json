@@ -1,6 +1,191 @@
 {
   "cases": [
     {
+      "caseId": "DISC-2026-0013",
+      "caseNumber": "DISC-2026-0013",
+      "category": "ACADEMIC_MALPRACTICE",
+      "status": "INCIDENT_REGISTERED",
+      "stage": 2,
+      "stageName": "Checklist Generated via Agent 44 Ingestion",
+      "incidentDate": "2026-09-12T06:05:35.325Z",
+      "incidentLocation": "Campus Evaluation Hall",
+      "reportingAuthority": "Automated Incident Stream (Agent 44 (Automated Student Life Ingestion))",
+      "studentId": "STU-A44-1789193135325",
+      "studentRoll": "22BCE1048",
+      "studentName": "Rohan Sharma",
+      "studentEmail": "22bce1048@vignan.ac.in",
+      "studentDept": "Computer Science & Engineering",
+      "witnesses": [
+        "Proctorial System Telemetry Agent",
+        "Lab Admin K. Suresh"
+      ],
+      "allegationSummary": "Ingested from Automated Proctoring Telemetry: Secondary display tab detected during online quiz evaluation.",
+      "evidenceItems": [
+        {
+          "id": "EVD-A44-1789193135325",
+          "title": "Agent 44 Automated Telemetry Log",
+          "type": "Ingested Report",
+          "timestamp": "2026-09-12T06:05:35.325Z"
+        }
+      ],
+      "createdAt": "2026-09-12T06:05:35.325Z",
+      "responseDeadline": "2026-09-20T06:05:35.325Z",
+      "retentionExpiryDate": null,
+      "guardrailFlags": {
+        "guiltDetermined": false,
+        "sanctionRecommended": false,
+        "disciplinaryShieldActive": true
+      }
+    },
+    {
+      "caseId": "DISC-2026-0012",
+      "caseNumber": "DISC-2026-0012",
+      "category": "ACADEMIC_MALPRACTICE",
+      "status": "INCIDENT_REGISTERED",
+      "stage": 2,
+      "stageName": "Checklist Generated via Agent 44 Ingestion",
+      "incidentDate": "2026-09-12T06:05:34.995Z",
+      "incidentLocation": "Campus Evaluation Hall",
+      "reportingAuthority": "Automated Incident Stream (Agent 44 (Automated Student Life Ingestion))",
+      "studentId": "STU-A44-1789193134995",
+      "studentRoll": "22BCE1048",
+      "studentName": "Rohan Sharma",
+      "studentEmail": "22bce1048@vignan.ac.in",
+      "studentDept": "Computer Science & Engineering",
+      "witnesses": [
+        "Proctorial System Telemetry Agent",
+        "Lab Admin K. Suresh"
+      ],
+      "allegationSummary": "Ingested from Automated Proctoring Telemetry: Secondary display tab detected during online quiz evaluation.",
+      "evidenceItems": [
+        {
+          "id": "EVD-A44-1789193134995",
+          "title": "Agent 44 Automated Telemetry Log",
+          "type": "Ingested Report",
+          "timestamp": "2026-09-12T06:05:34.995Z"
+        }
+      ],
+      "createdAt": "2026-09-12T06:05:34.995Z",
+      "responseDeadline": "2026-09-20T06:05:34.995Z",
+      "retentionExpiryDate": null,
+      "guardrailFlags": {
+        "guiltDetermined": false,
+        "sanctionRecommended": false,
+        "disciplinaryShieldActive": true
+      }
+    },
+    {
+      "caseId": "DISC-2026-0011",
+      "caseNumber": "DISC-2026-0011",
+      "category": "ACADEMIC_MALPRACTICE",
+      "status": "INCIDENT_REGISTERED",
+      "stage": 2,
+      "stageName": "Checklist Generated via Agent 44 Ingestion",
+      "incidentDate": "2026-09-12T06:05:34.814Z",
+      "incidentLocation": "Campus Evaluation Hall",
+      "reportingAuthority": "Automated Incident Stream (Agent 44 (Automated Student Life Ingestion))",
+      "studentId": "STU-A44-1789193134814",
+      "studentRoll": "22BCE1048",
+      "studentName": "Rohan Sharma",
+      "studentEmail": "22bce1048@vignan.ac.in",
+      "studentDept": "Computer Science & Engineering",
+      "witnesses": [
+        "Proctorial System Telemetry Agent",
+        "Lab Admin K. Suresh"
+      ],
+      "allegationSummary": "Ingested from Automated Proctoring Telemetry: Secondary display tab detected during online quiz evaluation.",
+      "evidenceItems": [
+        {
+          "id": "EVD-A44-1789193134814",
+          "title": "Agent 44 Automated Telemetry Log",
+          "type": "Ingested Report",
+          "timestamp": "2026-09-12T06:05:34.814Z"
+        }
+      ],
+      "createdAt": "2026-09-12T06:05:34.814Z",
+      "responseDeadline": "2026-09-20T06:05:34.814Z",
+      "retentionExpiryDate": null,
+      "guardrailFlags": {
+        "guiltDetermined": false,
+        "sanctionRecommended": false,
+        "disciplinaryShieldActive": true
+      }
+    },
+    {
+      "caseId": "DISC-2026-0010",
+      "caseNumber": "DISC-2026-0010",
+      "category": "ACADEMIC_MALPRACTICE",
+      "status": "INCIDENT_REGISTERED",
+      "stage": 2,
+      "stageName": "Checklist Generated via Agent 44 Ingestion",
+      "incidentDate": "2026-09-12T06:05:33.420Z",
+      "incidentLocation": "Campus Evaluation Hall",
+      "reportingAuthority": "Automated Incident Stream (Agent 44 (Automated Student Life Ingestion))",
+      "studentId": "STU-A44-1789193133420",
+      "studentRoll": "22BCE1048",
+      "studentName": "Rohan Sharma",
+      "studentEmail": "22bce1048@vignan.ac.in",
+      "studentDept": "Computer Science & Engineering",
+      "witnesses": [
+        "Proctorial System Telemetry Agent",
+        "Lab Admin K. Suresh"
+      ],
+      "allegationSummary": "Ingested from Automated Proctoring Telemetry: Secondary display tab detected during online quiz evaluation.",
+      "evidenceItems": [
+        {
+          "id": "EVD-A44-1789193133420",
+          "title": "Agent 44 Automated Telemetry Log",
+          "type": "Ingested Report",
+          "timestamp": "2026-09-12T06:05:33.420Z"
+        }
+      ],
+      "createdAt": "2026-09-12T06:05:33.420Z",
+      "responseDeadline": "2026-09-20T06:05:33.420Z",
+      "retentionExpiryDate": null,
+      "guardrailFlags": {
+        "guiltDetermined": false,
+        "sanctionRecommended": false,
+        "disciplinaryShieldActive": true
+      }
+    },
+    {
+      "caseId": "DISC-2026-0009",
+      "caseNumber": "DISC-2026-0009",
+      "category": "ACADEMIC_MALPRACTICE",
+      "status": "INCIDENT_REGISTERED",
+      "stage": 2,
+      "stageName": "Checklist Generated via Agent 44 Ingestion",
+      "incidentDate": "2026-09-12T06:05:31.306Z",
+      "incidentLocation": "Campus Evaluation Hall",
+      "reportingAuthority": "Automated Incident Stream (Agent 44 (Automated Student Life Ingestion))",
+      "studentId": "STU-A44-1789193131306",
+      "studentRoll": "22BCE1048",
+      "studentName": "Rohan Sharma",
+      "studentEmail": "22bce1048@vignan.ac.in",
+      "studentDept": "Computer Science & Engineering",
+      "witnesses": [
+        "Proctorial System Telemetry Agent",
+        "Lab Admin K. Suresh"
+      ],
+      "allegationSummary": "Ingested from Automated Proctoring Telemetry: Secondary display tab detected during online quiz evaluation.",
+      "evidenceItems": [
+        {
+          "id": "EVD-A44-1789193131306",
+          "title": "Agent 44 Automated Telemetry Log",
+          "type": "Ingested Report",
+          "timestamp": "2026-09-12T06:05:31.306Z"
+        }
+      ],
+      "createdAt": "2026-09-12T06:05:31.306Z",
+      "responseDeadline": "2026-09-20T06:05:31.306Z",
+      "retentionExpiryDate": null,
+      "guardrailFlags": {
+        "guiltDetermined": false,
+        "sanctionRecommended": false,
+        "disciplinaryShieldActive": true
+      }
+    },
+    {
       "caseId": "DISC-2026-0008",
       "caseNumber": "DISC-2026-0008",
       "category": "ACADEMIC_MALPRACTICE",
@@ -77,9 +262,9 @@
       "caseId": "DISC-2026-0006",
       "caseNumber": "DISC-2026-0006",
       "category": "ANTI_RAGGING_HARASSMENT",
-      "status": "INCIDENT_REGISTERED",
-      "stage": 2,
-      "stageName": "Procedural Checklist Active",
+      "status": "CLOSED_RETENTION_ACTIVE",
+      "stage": 9,
+      "stageName": "Case Closed (Retention Countdown Active)",
       "incidentDate": "2026-09-11T08:47:00.000Z",
       "incidentLocation": "Main Academic Block - Examination Hall B",
       "reportingAuthority": "Prof. A. N. Murthy (Proctorial Board)",
@@ -111,12 +296,13 @@
       ],
       "createdAt": "2026-09-11T14:18:37.846Z",
       "responseDeadline": "2026-09-14T14:18:37.846Z",
-      "retentionExpiryDate": null,
+      "retentionExpiryDate": "2031-09-12T05:58:32.273Z",
       "guardrailFlags": {
         "guiltDetermined": false,
         "sanctionRecommended": false,
         "disciplinaryShieldActive": true
-      }
+      },
+      "closedAt": "2026-09-12T05:58:32.290Z"
     },
     {
       "caseId": "DISC-2026-0005",
@@ -868,8 +1054,8 @@
         "name": "Case Closure & Record Expiry Scheduled",
         "description": "Case marked closed. Expungement timer initialized for 5 years retention.",
         "mandatory": true,
-        "status": "PENDING",
-        "completedAt": null,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-12T05:58:32.291Z",
         "gateRequirement": "Case file archived and scheduled for automatic purging under policy"
       }
     ],
@@ -984,6 +1170,466 @@
         "mandatory": true,
         "status": "COMPLETED",
         "completedAt": "2026-09-12T04:18:58.107Z",
+        "gateRequirement": "Procedure binds committee to statutory timeline"
+      },
+      {
+        "id": "STEP-3-NOTICE-ISSUED",
+        "stepNumber": 3,
+        "name": "Notice of Allegation Dispatched",
+        "description": "Formal notice issued with 3-day dispatch window and recorded delivery.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Student must receive official notice before any further action"
+      },
+      {
+        "id": "STEP-4-STUDENT-RESPONSE",
+        "stepNumber": 4,
+        "name": "Right to be Heard (Response Window)",
+        "description": "Student afforded 5 days to submit written response, statements, and witness list.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Mandatory due-process gate: Committee cannot meet without hearing response or expiry of window"
+      },
+      {
+        "id": "STEP-5-COMMITTEE-CONSTITUTION",
+        "stepNumber": 5,
+        "name": "Committee Constitution & Hearing Convened",
+        "description": "Quorum of min 3 authorized members convened for mandatory formal hearing.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Quorum verification required before deliberation"
+      },
+      {
+        "id": "STEP-6-DECISION-RECORDED",
+        "stepNumber": 6,
+        "name": "Findings & Sanction Recorded with Reasoned Order",
+        "description": "Authorized decision recorded with findings of fact, evidence references, and sanction within policy limits.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "GATE LOCKED: Cannot record decision until Steps 3, 4, and 5 are completed!"
+      },
+      {
+        "id": "STEP-7-APPEAL-COMMUNICATED",
+        "stepNumber": 7,
+        "name": "Decision Order & Appeal Route Communicated",
+        "description": "Formal order served with 14-day statutory appeal window to the Appellate Authority.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Notice of appeal route is a mandatory constitutional right"
+      },
+      {
+        "id": "STEP-8-SANCTION-COMPLIANCE",
+        "stepNumber": 8,
+        "name": "Sanction Compliance & Verification",
+        "description": "Track fulfillment of assigned requirements (community service, fines, suspension period).",
+        "mandatory": false,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Closure requires authority verification of completion proof"
+      },
+      {
+        "id": "STEP-9-CASE-CLOSURE-RETENTION",
+        "stepNumber": 9,
+        "name": "Case Closure & Record Expiry Scheduled",
+        "description": "Case marked closed. Expungement timer initialized for 2 years retention.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Case file archived and scheduled for automatic purging under policy"
+      }
+    ],
+    "DISC-2026-0009": [
+      {
+        "id": "STEP-1-INCIDENT-REGISTERED",
+        "stepNumber": 1,
+        "name": "Incident Report Registered",
+        "description": "Capture incident details, date, location, persons involved, and assign unique case ID.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-12T06:05:31.306Z",
+        "gateRequirement": "Initial filing mandatory to initiate any proceeding"
+      },
+      {
+        "id": "STEP-2-POLICY-CLASSIFIED",
+        "stepNumber": 2,
+        "name": "Offence Category & Jurisdiction Identified",
+        "description": "Classified under Academic Dishonesty & Malpractice (POL-ACAD-01). Decision authority: Dean of Academic Affairs & Standing Academic Integrity Committee.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-12T06:05:31.306Z",
+        "gateRequirement": "Procedure binds committee to statutory timeline"
+      },
+      {
+        "id": "STEP-3-NOTICE-ISSUED",
+        "stepNumber": 3,
+        "name": "Notice of Allegation Dispatched",
+        "description": "Formal notice issued with 3-day dispatch window and recorded delivery.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Student must receive official notice before any further action"
+      },
+      {
+        "id": "STEP-4-STUDENT-RESPONSE",
+        "stepNumber": 4,
+        "name": "Right to be Heard (Response Window)",
+        "description": "Student afforded 5 days to submit written response, statements, and witness list.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Mandatory due-process gate: Committee cannot meet without hearing response or expiry of window"
+      },
+      {
+        "id": "STEP-5-COMMITTEE-CONSTITUTION",
+        "stepNumber": 5,
+        "name": "Committee Constitution & Hearing Convened",
+        "description": "Quorum of min 3 authorized members convened for mandatory formal hearing.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Quorum verification required before deliberation"
+      },
+      {
+        "id": "STEP-6-DECISION-RECORDED",
+        "stepNumber": 6,
+        "name": "Findings & Sanction Recorded with Reasoned Order",
+        "description": "Authorized decision recorded with findings of fact, evidence references, and sanction within policy limits.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "GATE LOCKED: Cannot record decision until Steps 3, 4, and 5 are completed!"
+      },
+      {
+        "id": "STEP-7-APPEAL-COMMUNICATED",
+        "stepNumber": 7,
+        "name": "Decision Order & Appeal Route Communicated",
+        "description": "Formal order served with 14-day statutory appeal window to the Appellate Authority.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Notice of appeal route is a mandatory constitutional right"
+      },
+      {
+        "id": "STEP-8-SANCTION-COMPLIANCE",
+        "stepNumber": 8,
+        "name": "Sanction Compliance & Verification",
+        "description": "Track fulfillment of assigned requirements (community service, fines, suspension period).",
+        "mandatory": false,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Closure requires authority verification of completion proof"
+      },
+      {
+        "id": "STEP-9-CASE-CLOSURE-RETENTION",
+        "stepNumber": 9,
+        "name": "Case Closure & Record Expiry Scheduled",
+        "description": "Case marked closed. Expungement timer initialized for 2 years retention.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Case file archived and scheduled for automatic purging under policy"
+      }
+    ],
+    "DISC-2026-0010": [
+      {
+        "id": "STEP-1-INCIDENT-REGISTERED",
+        "stepNumber": 1,
+        "name": "Incident Report Registered",
+        "description": "Capture incident details, date, location, persons involved, and assign unique case ID.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-12T06:05:33.420Z",
+        "gateRequirement": "Initial filing mandatory to initiate any proceeding"
+      },
+      {
+        "id": "STEP-2-POLICY-CLASSIFIED",
+        "stepNumber": 2,
+        "name": "Offence Category & Jurisdiction Identified",
+        "description": "Classified under Academic Dishonesty & Malpractice (POL-ACAD-01). Decision authority: Dean of Academic Affairs & Standing Academic Integrity Committee.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-12T06:05:33.420Z",
+        "gateRequirement": "Procedure binds committee to statutory timeline"
+      },
+      {
+        "id": "STEP-3-NOTICE-ISSUED",
+        "stepNumber": 3,
+        "name": "Notice of Allegation Dispatched",
+        "description": "Formal notice issued with 3-day dispatch window and recorded delivery.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Student must receive official notice before any further action"
+      },
+      {
+        "id": "STEP-4-STUDENT-RESPONSE",
+        "stepNumber": 4,
+        "name": "Right to be Heard (Response Window)",
+        "description": "Student afforded 5 days to submit written response, statements, and witness list.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Mandatory due-process gate: Committee cannot meet without hearing response or expiry of window"
+      },
+      {
+        "id": "STEP-5-COMMITTEE-CONSTITUTION",
+        "stepNumber": 5,
+        "name": "Committee Constitution & Hearing Convened",
+        "description": "Quorum of min 3 authorized members convened for mandatory formal hearing.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Quorum verification required before deliberation"
+      },
+      {
+        "id": "STEP-6-DECISION-RECORDED",
+        "stepNumber": 6,
+        "name": "Findings & Sanction Recorded with Reasoned Order",
+        "description": "Authorized decision recorded with findings of fact, evidence references, and sanction within policy limits.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "GATE LOCKED: Cannot record decision until Steps 3, 4, and 5 are completed!"
+      },
+      {
+        "id": "STEP-7-APPEAL-COMMUNICATED",
+        "stepNumber": 7,
+        "name": "Decision Order & Appeal Route Communicated",
+        "description": "Formal order served with 14-day statutory appeal window to the Appellate Authority.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Notice of appeal route is a mandatory constitutional right"
+      },
+      {
+        "id": "STEP-8-SANCTION-COMPLIANCE",
+        "stepNumber": 8,
+        "name": "Sanction Compliance & Verification",
+        "description": "Track fulfillment of assigned requirements (community service, fines, suspension period).",
+        "mandatory": false,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Closure requires authority verification of completion proof"
+      },
+      {
+        "id": "STEP-9-CASE-CLOSURE-RETENTION",
+        "stepNumber": 9,
+        "name": "Case Closure & Record Expiry Scheduled",
+        "description": "Case marked closed. Expungement timer initialized for 2 years retention.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Case file archived and scheduled for automatic purging under policy"
+      }
+    ],
+    "DISC-2026-0011": [
+      {
+        "id": "STEP-1-INCIDENT-REGISTERED",
+        "stepNumber": 1,
+        "name": "Incident Report Registered",
+        "description": "Capture incident details, date, location, persons involved, and assign unique case ID.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-12T06:05:34.814Z",
+        "gateRequirement": "Initial filing mandatory to initiate any proceeding"
+      },
+      {
+        "id": "STEP-2-POLICY-CLASSIFIED",
+        "stepNumber": 2,
+        "name": "Offence Category & Jurisdiction Identified",
+        "description": "Classified under Academic Dishonesty & Malpractice (POL-ACAD-01). Decision authority: Dean of Academic Affairs & Standing Academic Integrity Committee.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-12T06:05:34.814Z",
+        "gateRequirement": "Procedure binds committee to statutory timeline"
+      },
+      {
+        "id": "STEP-3-NOTICE-ISSUED",
+        "stepNumber": 3,
+        "name": "Notice of Allegation Dispatched",
+        "description": "Formal notice issued with 3-day dispatch window and recorded delivery.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Student must receive official notice before any further action"
+      },
+      {
+        "id": "STEP-4-STUDENT-RESPONSE",
+        "stepNumber": 4,
+        "name": "Right to be Heard (Response Window)",
+        "description": "Student afforded 5 days to submit written response, statements, and witness list.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Mandatory due-process gate: Committee cannot meet without hearing response or expiry of window"
+      },
+      {
+        "id": "STEP-5-COMMITTEE-CONSTITUTION",
+        "stepNumber": 5,
+        "name": "Committee Constitution & Hearing Convened",
+        "description": "Quorum of min 3 authorized members convened for mandatory formal hearing.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Quorum verification required before deliberation"
+      },
+      {
+        "id": "STEP-6-DECISION-RECORDED",
+        "stepNumber": 6,
+        "name": "Findings & Sanction Recorded with Reasoned Order",
+        "description": "Authorized decision recorded with findings of fact, evidence references, and sanction within policy limits.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "GATE LOCKED: Cannot record decision until Steps 3, 4, and 5 are completed!"
+      },
+      {
+        "id": "STEP-7-APPEAL-COMMUNICATED",
+        "stepNumber": 7,
+        "name": "Decision Order & Appeal Route Communicated",
+        "description": "Formal order served with 14-day statutory appeal window to the Appellate Authority.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Notice of appeal route is a mandatory constitutional right"
+      },
+      {
+        "id": "STEP-8-SANCTION-COMPLIANCE",
+        "stepNumber": 8,
+        "name": "Sanction Compliance & Verification",
+        "description": "Track fulfillment of assigned requirements (community service, fines, suspension period).",
+        "mandatory": false,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Closure requires authority verification of completion proof"
+      },
+      {
+        "id": "STEP-9-CASE-CLOSURE-RETENTION",
+        "stepNumber": 9,
+        "name": "Case Closure & Record Expiry Scheduled",
+        "description": "Case marked closed. Expungement timer initialized for 2 years retention.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Case file archived and scheduled for automatic purging under policy"
+      }
+    ],
+    "DISC-2026-0012": [
+      {
+        "id": "STEP-1-INCIDENT-REGISTERED",
+        "stepNumber": 1,
+        "name": "Incident Report Registered",
+        "description": "Capture incident details, date, location, persons involved, and assign unique case ID.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-12T06:05:34.995Z",
+        "gateRequirement": "Initial filing mandatory to initiate any proceeding"
+      },
+      {
+        "id": "STEP-2-POLICY-CLASSIFIED",
+        "stepNumber": 2,
+        "name": "Offence Category & Jurisdiction Identified",
+        "description": "Classified under Academic Dishonesty & Malpractice (POL-ACAD-01). Decision authority: Dean of Academic Affairs & Standing Academic Integrity Committee.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-12T06:05:34.996Z",
+        "gateRequirement": "Procedure binds committee to statutory timeline"
+      },
+      {
+        "id": "STEP-3-NOTICE-ISSUED",
+        "stepNumber": 3,
+        "name": "Notice of Allegation Dispatched",
+        "description": "Formal notice issued with 3-day dispatch window and recorded delivery.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Student must receive official notice before any further action"
+      },
+      {
+        "id": "STEP-4-STUDENT-RESPONSE",
+        "stepNumber": 4,
+        "name": "Right to be Heard (Response Window)",
+        "description": "Student afforded 5 days to submit written response, statements, and witness list.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Mandatory due-process gate: Committee cannot meet without hearing response or expiry of window"
+      },
+      {
+        "id": "STEP-5-COMMITTEE-CONSTITUTION",
+        "stepNumber": 5,
+        "name": "Committee Constitution & Hearing Convened",
+        "description": "Quorum of min 3 authorized members convened for mandatory formal hearing.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Quorum verification required before deliberation"
+      },
+      {
+        "id": "STEP-6-DECISION-RECORDED",
+        "stepNumber": 6,
+        "name": "Findings & Sanction Recorded with Reasoned Order",
+        "description": "Authorized decision recorded with findings of fact, evidence references, and sanction within policy limits.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "GATE LOCKED: Cannot record decision until Steps 3, 4, and 5 are completed!"
+      },
+      {
+        "id": "STEP-7-APPEAL-COMMUNICATED",
+        "stepNumber": 7,
+        "name": "Decision Order & Appeal Route Communicated",
+        "description": "Formal order served with 14-day statutory appeal window to the Appellate Authority.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Notice of appeal route is a mandatory constitutional right"
+      },
+      {
+        "id": "STEP-8-SANCTION-COMPLIANCE",
+        "stepNumber": 8,
+        "name": "Sanction Compliance & Verification",
+        "description": "Track fulfillment of assigned requirements (community service, fines, suspension period).",
+        "mandatory": false,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Closure requires authority verification of completion proof"
+      },
+      {
+        "id": "STEP-9-CASE-CLOSURE-RETENTION",
+        "stepNumber": 9,
+        "name": "Case Closure & Record Expiry Scheduled",
+        "description": "Case marked closed. Expungement timer initialized for 2 years retention.",
+        "mandatory": true,
+        "status": "PENDING",
+        "completedAt": null,
+        "gateRequirement": "Case file archived and scheduled for automatic purging under policy"
+      }
+    ],
+    "DISC-2026-0013": [
+      {
+        "id": "STEP-1-INCIDENT-REGISTERED",
+        "stepNumber": 1,
+        "name": "Incident Report Registered",
+        "description": "Capture incident details, date, location, persons involved, and assign unique case ID.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-12T06:05:35.325Z",
+        "gateRequirement": "Initial filing mandatory to initiate any proceeding"
+      },
+      {
+        "id": "STEP-2-POLICY-CLASSIFIED",
+        "stepNumber": 2,
+        "name": "Offence Category & Jurisdiction Identified",
+        "description": "Classified under Academic Dishonesty & Malpractice (POL-ACAD-01). Decision authority: Dean of Academic Affairs & Standing Academic Integrity Committee.",
+        "mandatory": true,
+        "status": "COMPLETED",
+        "completedAt": "2026-09-12T06:05:35.325Z",
         "gateRequirement": "Procedure binds committee to statutory timeline"
       },
       {
@@ -1484,6 +2130,22 @@
         },
         "previousHash": "a723a445a0848d95bb0417e16d431393eec04c6d0517a678f4003971ae77b949",
         "hash": "e8286ea45cfd8f5fd0ed6f46814f6ebcf17fde55dc80b5d62b7fe523e05f7df4"
+      },
+      {
+        "id": "TX-1789192712293-8Q8IB",
+        "index": 2,
+        "caseId": "DISC-2026-0006",
+        "timestamp": "2026-09-12T05:58:32.291Z",
+        "actor": "Disciplinary Administrator",
+        "action": "CASE_OFFICIALLY_CLOSED",
+        "payload": {
+          "closedAt": "2026-09-12T05:58:32.290Z",
+          "retentionExpiryDate": "2031-09-12T05:58:32.273Z",
+          "retentionYears": 5,
+          "notes": "Sanctions completed. Procedural record verified."
+        },
+        "previousHash": "e8286ea45cfd8f5fd0ed6f46814f6ebcf17fde55dc80b5d62b7fe523e05f7df4",
+        "hash": "52caa019cf846e165dec9b756642a39c0e13293594f2fa18c3dbc25cdd0253f8"
       }
     ],
     "DISC-2026-0007": [
@@ -1524,6 +2186,91 @@
         },
         "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
         "hash": "f8ebbc5ee9e96564d84d915792e672c09744e5949aca041c3381e8cb82767342"
+      }
+    ],
+    "DISC-2026-0009": [
+      {
+        "id": "TX-1789193131308-3H13G",
+        "index": 0,
+        "caseId": "DISC-2026-0009",
+        "timestamp": "2026-09-12T06:05:31.306Z",
+        "actor": "Agent 44 (Automated Student Life Ingestion)",
+        "action": "AGENT44_INCIDENT_INGESTED",
+        "payload": {
+          "caseId": "DISC-2026-0009",
+          "category": "ACADEMIC_MALPRACTICE",
+          "studentRoll": "22BCE1048"
+        },
+        "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "415bfb05d7a00ce9ad13c442bc8bd871ffeb4738389d1e98a6aa8c6d0fbea3fc"
+      }
+    ],
+    "DISC-2026-0010": [
+      {
+        "id": "TX-1789193133421-3TU3E",
+        "index": 0,
+        "caseId": "DISC-2026-0010",
+        "timestamp": "2026-09-12T06:05:33.420Z",
+        "actor": "Agent 44 (Automated Student Life Ingestion)",
+        "action": "AGENT44_INCIDENT_INGESTED",
+        "payload": {
+          "caseId": "DISC-2026-0010",
+          "category": "ACADEMIC_MALPRACTICE",
+          "studentRoll": "22BCE1048"
+        },
+        "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "0a8dede7b9604fca75cdf51eb6263816042362a9d6026b4f973957d27a73ffc5"
+      }
+    ],
+    "DISC-2026-0011": [
+      {
+        "id": "TX-1789193134815-1RDAU",
+        "index": 0,
+        "caseId": "DISC-2026-0011",
+        "timestamp": "2026-09-12T06:05:34.814Z",
+        "actor": "Agent 44 (Automated Student Life Ingestion)",
+        "action": "AGENT44_INCIDENT_INGESTED",
+        "payload": {
+          "caseId": "DISC-2026-0011",
+          "category": "ACADEMIC_MALPRACTICE",
+          "studentRoll": "22BCE1048"
+        },
+        "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "0205f4f340aef299ccec5127152e114a9edeb34b6e80ac775d79bd810dfe6c86"
+      }
+    ],
+    "DISC-2026-0012": [
+      {
+        "id": "TX-1789193134996-ELEPW",
+        "index": 0,
+        "caseId": "DISC-2026-0012",
+        "timestamp": "2026-09-12T06:05:34.996Z",
+        "actor": "Agent 44 (Automated Student Life Ingestion)",
+        "action": "AGENT44_INCIDENT_INGESTED",
+        "payload": {
+          "caseId": "DISC-2026-0012",
+          "category": "ACADEMIC_MALPRACTICE",
+          "studentRoll": "22BCE1048"
+        },
+        "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "9ef57a113ddc2646f91272849d04fc2b01d18137c15760cd21d39143101c5966"
+      }
+    ],
+    "DISC-2026-0013": [
+      {
+        "id": "TX-1789193135325-8C3HI",
+        "index": 0,
+        "caseId": "DISC-2026-0013",
+        "timestamp": "2026-09-12T06:05:35.325Z",
+        "actor": "Agent 44 (Automated Student Life Ingestion)",
+        "action": "AGENT44_INCIDENT_INGESTED",
+        "payload": {
+          "caseId": "DISC-2026-0013",
+          "category": "ACADEMIC_MALPRACTICE",
+          "studentRoll": "22BCE1048"
+        },
+        "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "a08f6b693a24e3e1194f13710ee02d8d8d39afd13bfd2460f1d31523e7829704"
       }
     ]
   },

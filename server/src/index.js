@@ -12,6 +12,7 @@ const committeeRouter = require('./routes/committee');
 const sanctionsRouter = require('./routes/sanctions');
 const governanceRouter = require('./routes/governance');
 const integrationsRouter = require('./routes/integrations');
+const chatRouter = require('./routes/chat');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -49,6 +50,7 @@ app.use('/api', committeeRouter); // For /api/precedents
 app.use('/api/cases', sanctionsRouter);
 app.use('/api/reports', governanceRouter);
 app.use('/api/integrations', integrationsRouter);
+app.use('/api/chat', chatRouter);
 
 // Serve static client build if it exists (production mode)
 const clientDist = path.resolve(__dirname, '../../client/dist');
