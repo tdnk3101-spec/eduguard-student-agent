@@ -1,5 +1,4 @@
 import React from 'react';
-import { VignanLogo } from './VignanLogo';
 
 export function VignanBanner() {
   return (
@@ -14,8 +13,18 @@ export function VignanBanner() {
     }}>
       {/* Left: Vignan's Logo & Title */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
-        {/* Official Vignan Shield Emblem */}
-        <VignanLogo size={48} />
+        {/* Real Vignan Crest Emblem */}
+        <img
+          src="/vignan_crest.png"
+          alt="Vignan University Crest"
+          style={{
+            height: '46px',
+            width: 'auto',
+            objectFit: 'contain',
+            flexShrink: 0,
+            filter: 'drop-shadow(0 1px 3px rgba(0,0,0,0.1))'
+          }}
+        />
 
         <div>
           <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.4rem' }}>

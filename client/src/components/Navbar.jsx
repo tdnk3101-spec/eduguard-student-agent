@@ -1,96 +1,150 @@
-import React from 'react';
-import { VignanBanner } from './VignanBanner';
-import { Shield, Scale, User, TrendingUp, Layers, Plus, Lock, Bot } from './Icons';
+import React, { useState } from 'react';
+import { AgentLogo } from './AgentLogo';
+import { Shield, Scale, User, TrendingUp, Layers, Plus, Lock, Bot, Play } from './Icons';
+import { soundFx } from '../utils/audioFx';
 
-export function Navbar({ activeRole, setActiveRole, currentView, setCurrentView, onOpenIntake, onOpenSandbox }) {
+export function Navbar({
+  activeRole,
+  setActiveRole,
+  currentView,
+  setCurrentView,
+  onOpenIntake,
+  onOpenSandbox,
+  onReplaySplash
+}) {
+  const [isMuted, setIsMuted] = useState(() => soundFx.getMuted());
+
+  function toggleSound() {
+    const next = !isMuted;
+    setIsMuted(next);
+    soundFx.setMuted(next);
+    if (!next) soundFx.playClick();
+  }
+
   const roles = [
-    { id: 'admin', label: 'Disciplinary Admin', icon: Shield, desc: 'Case & policy management' },
-    { id: 'committee', label: 'Committee Member', icon: Scale, desc: 'Review & record findings' },
-    { id: 'student', label: 'Student (Rohan - 22BCE1048)', icon: User, desc: 'Notices & right to respond' },
-    { id: 'governance', label: 'Governance Officer', icon: TrendingUp, desc: 'Zero-PII trends & audits' }
+    { id: 'admin', label: 'Disciplinary Admin', desc: 'Case intake & checklist enforcement' },
+    { id: 'committee', label: 'Committee Member', desc: 'Precedent review & fair sentencing' },
+    { id: 'student', label: 'Student (Rohan - 22BCE1048)', desc: 'Notices & right to respond' },
+    { id: 'governance', label: 'Governance Officer', desc: 'Zero-PII aggregate trends & audits' }
   ];
 
   return (
-    <header style={{ background: '#ffffff', borderBottom: '1px solid #e2e8f0' }}>
-      {/* Official Institutional Header Banner matching user image */}
-      <VignanBanner />
-
+    <header style={{ background: '#ffffff', borderBottom: '1px solid #e2e8f0', position: 'sticky', top: 0, zIndex: 100 }}>
       {/* Guardrail & Compliance Sub-Header */}
       <div style={{
-        background: '#f8fafc',
-        borderBottom: '1px solid #e2e8f0',
-        padding: '0.45rem 1.5rem',
+        background: '#07152b',
+        borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+        padding: '0.4rem 1.5rem',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        fontSize: '0.75rem'
+        fontSize: '0.74rem'
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: '#16a34a', fontWeight: 600 }}>
-            <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#16a34a', display: 'inline-block' }}></span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: '#4ade80', fontWeight: 600 }}>
+            <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#4ade80', boxShadow: '0 0 6px #4ade80', display: 'inline-block' }} />
             <span>Guilt-Neutrality Guardrail: <strong>ENFORCED</strong></span>
           </div>
-          <span style={{ color: '#cbd5e1' }}>|</span>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: '#2563eb', fontWeight: 600 }}>
+          <span style={{ color: '#334155' }}>|</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: '#60a5fa', fontWeight: 600 }}>
             <Lock size={12} />
             <span>SHA-256 Ledger: <strong>ACTIVE</strong></span>
           </div>
-          <span style={{ color: '#cbd5e1' }}>|</span>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: '#7c3aed', fontWeight: 600 }}>
+          <span style={{ color: '#334155' }}>|</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: '#c084fc', fontWeight: 600 }}>
             <Shield size={12} />
-            <span>Faculty & Placement Privacy Shield: <strong>ACTIVE</strong></span>
+            <span>Faculty & Placement Shield: <strong>ACTIVE</strong></span>
           </div>
         </div>
 
-        <div style={{ color: '#64748b', fontSize: '0.72rem' }}>
-          Procedural Fairness Protocol v2.4 • Due Process Guarantee
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
+          <button
+            onClick={toggleSound}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: '#94a3b8',
+              cursor: 'pointer',
+              fontSize: '0.72rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.3rem'
+            }}
+            title={isMuted ? 'Unmute UI Audio FX' : 'Mute UI Audio FX'}
+          >
+            <span>{isMuted ? '🔇 Audio Off' : '🔊 Audio On'}</span>
+          </button>
+
+          <span style={{ color: '#334155' }}>|</span>
+
+          <button
+            onClick={() => {
+              soundFx.playClick();
+              onReplaySplash();
+            }}
+            style={{
+              background: 'rgba(56, 189, 248, 0.15)',
+              border: '1px solid rgba(56, 189, 248, 0.4)',
+              color: '#38bdf8',
+              padding: '0.15rem 0.55rem',
+              borderRadius: '9999px',
+              fontSize: '0.68rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.25rem'
+            }}
+            title="Replay opening flash screen & zoom animation"
+          >
+            <Play size={10} />
+            <span>Replay Intro</span>
+          </button>
         </div>
       </div>
 
       {/* Main Navbar */}
       <div className="app-container" style={{ padding: '0.75rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        {/* Brand */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', cursor: 'pointer' }} onClick={() => setCurrentView('dashboard')}>
-          <div style={{
-            width: 42,
-            height: 42,
-            borderRadius: '12px',
-            background: 'linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#ffffff',
-            boxShadow: '0 4px 12px rgba(37, 99, 235, 0.22)'
-          }}>
-            <Shield size={22} />
-          </div>
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <h1 style={{ fontSize: '1.2rem', color: '#0a2540', lineHeight: 1.2 }}>EduGuard</h1>
-              <span className="badge badge-blue" style={{ fontSize: '0.68rem', padding: '0.12rem 0.5rem' }}>
-                Student Discipline Agent
-              </span>
-            </div>
-            <p style={{ fontSize: '0.72rem', color: '#64748b' }}>
-              Policy Compliance & Due Process Management Platform
-            </p>
-          </div>
+        {/* Brand with New Crest Logo */}
+        <div
+          style={{ cursor: 'pointer' }}
+          onClick={() => {
+            soundFx.playClick();
+            setCurrentView('intro');
+          }}
+        >
+          <AgentLogo size={42} showText={true} glowing={true} />
         </div>
 
         {/* View Navigation Tabs */}
-        <nav style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', background: '#f1f5f9', padding: '0.3rem', borderRadius: '10px' }}>
+        <nav style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', background: '#f1f5f9', padding: '0.25rem', borderRadius: '10px' }}>
+          <button
+            className={`btn btn-sm ${currentView === 'intro' ? 'btn-primary' : 'btn-secondary'}`}
+            style={{ border: 'none' }}
+            onClick={() => {
+              soundFx.playClick();
+              setCurrentView('intro');
+            }}
+          >
+            <Bot size={14} /> Agent Overview
+          </button>
+
           <button
             className={`btn btn-sm ${currentView === 'dashboard' ? 'btn-primary' : 'btn-secondary'}`}
             style={{ border: 'none' }}
-            onClick={() => setCurrentView('dashboard')}
+            onClick={() => {
+              soundFx.playClick();
+              setCurrentView('dashboard');
+            }}
           >
-            <Layers size={14} /> Case Register
+            <Layers size={14} /> Case Workspace
           </button>
-          
+
           <button
             className={`btn btn-sm ${currentView === 'committee' ? 'btn-primary' : 'btn-secondary'}`}
             style={{ border: 'none' }}
             onClick={() => {
+              soundFx.playClick();
               setActiveRole('committee');
               setCurrentView('committee');
             }}
@@ -102,6 +156,7 @@ export function Navbar({ activeRole, setActiveRole, currentView, setCurrentView,
             className={`btn btn-sm ${currentView === 'student' ? 'btn-primary' : 'btn-secondary'}`}
             style={{ border: 'none' }}
             onClick={() => {
+              soundFx.playClick();
               setActiveRole('student');
               setCurrentView('student');
             }}
@@ -113,6 +168,7 @@ export function Navbar({ activeRole, setActiveRole, currentView, setCurrentView,
             className={`btn btn-sm ${currentView === 'governance' ? 'btn-primary' : 'btn-secondary'}`}
             style={{ border: 'none' }}
             onClick={() => {
+              soundFx.playClick();
               setActiveRole('governance');
               setCurrentView('governance');
             }}
@@ -123,20 +179,26 @@ export function Navbar({ activeRole, setActiveRole, currentView, setCurrentView,
 
         {/* Action Controls & Role Switcher */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          {/* Agent Sandbox Button */}
+          {/* Agent Sandbox Button (Ingress 44 / Egress 56,57) */}
           <button
             className="btn btn-secondary btn-sm"
-            onClick={onOpenSandbox}
+            onClick={() => {
+              soundFx.playClick();
+              onOpenSandbox();
+            }}
             title="Inspect Agent 44 Ingress and Agent 56/57 Egress contracts"
           >
             <Bot size={14} style={{ color: '#2563eb' }} />
             <span>Agent Sandbox</span>
           </button>
 
-          {/* New Incident Button */}
+          {/* New Case Button */}
           <button
             className="btn btn-primary btn-sm"
-            onClick={onOpenIntake}
+            onClick={() => {
+              soundFx.playClick();
+              onOpenIntake();
+            }}
           >
             <Plus size={14} />
             <span>New Case</span>
@@ -149,6 +211,7 @@ export function Navbar({ activeRole, setActiveRole, currentView, setCurrentView,
               value={activeRole}
               onChange={(e) => {
                 const newRole = e.target.value;
+                soundFx.playClick();
                 setActiveRole(newRole);
                 if (newRole === 'student') setCurrentView('student');
                 else if (newRole === 'committee') setCurrentView('committee');

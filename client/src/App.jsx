@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
+import { SplashScreen } from './components/SplashScreen';
+import { IntroPage } from './pages/IntroPage';
 import { Dashboard } from './pages/Dashboard';
 import { CaseDetail } from './pages/CaseDetail';
 import { CommitteeDesk } from './pages/CommitteeDesk';
@@ -9,11 +11,12 @@ import { HashChainModal } from './components/HashChainModal';
 import { NoticeModal } from './components/NoticeModal';
 import { AgentSandboxModal } from './components/AgentSandboxModal';
 import { IncidentIntakeModal } from './components/IncidentIntakeModal';
-import { Shield } from './components/Icons';
+import { AgentLogo } from './components/AgentLogo';
 
 export default function App() {
+  const [showSplash, setShowSplash] = useState(true);
   const [activeRole, setActiveRole] = useState('admin');
-  const [currentView, setCurrentView] = useState('dashboard');
+  const [currentView, setCurrentView] = useState('intro');
   const [selectedCaseId, setSelectedCaseId] = useState(null);
 
   // Modals state
@@ -29,98 +32,121 @@ export default function App() {
   }
 
   function handleBackToDashboard() {
-    setSelectedCaseId(null);
     setCurrentView('dashboard');
   }
 
+  function handleReplaySplash() {
+    setShowSplash(true);
+  }
+
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      {/* Navbar */}
-      <Navbar
-        activeRole={activeRole}
-        setActiveRole={setActiveRole}
-        currentView={currentView}
-        setCurrentView={setCurrentView}
-        onOpenIntake={() => setShowIntake(true)}
-        onOpenSandbox={() => setShowSandbox(true)}
-      />
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
+      {/* 1. Opening Flash Screen for Agent 47 with Zoom Transition */}
+      {showSplash && (
+        <SplashScreen onComplete={() => setShowSplash(false)} />
+      )}
 
-      {/* Main Content Area */}
-      <main className="app-container" style={{ flex: 1, padding: '1.75rem 1.5rem 3rem' }}>
-        {currentView === 'dashboard' && (
-          <Dashboard
-            onSelectCase={handleSelectCase}
-            onOpenIntake={() => setShowIntake(true)}
-            onOpenSandbox={() => setShowSandbox(true)}
-            onOpenHashChain={(cid) => setHashChainCaseId(cid)}
-          />
-        )}
+      {/* 2. Main Dashboard with Zooming Spatial Entrance */}
+      <div
+        className={!showSplash ? 'animate-zoom-in' : ''}
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          flex: 1,
+          width: '100%'
+        }}
+      >
+        {/* Navigation Bar with New Shield Crest Logo */}
+        <Navbar
+          activeRole={activeRole}
+          setActiveRole={setActiveRole}
+          currentView={currentView}
+          setCurrentView={setCurrentView}
+          onOpenIntake={() => setShowIntake(true)}
+          onOpenSandbox={() => setShowSandbox(true)}
+          onReplaySplash={handleReplaySplash}
+        />
 
-        {currentView === 'case-detail' && selectedCaseId && (
-          <CaseDetail
-            caseId={selectedCaseId}
-            onBack={handleBackToDashboard}
-            onOpenHashChain={(cid) => setHashChainCaseId(cid)}
-            onOpenNotice={(notice) => setActiveNotice(notice)}
-            activeRole={activeRole}
-          />
-        )}
+        {/* Main Content Area */}
+        <main className="app-container" style={{ flex: 1, padding: '1.75rem 1.5rem 3.5rem' }}>
+          {currentView === 'intro' && (
+            <IntroPage
+              onNavigateToWorkspace={() => setCurrentView('dashboard')}
+              onOpenIntake={() => setShowIntake(true)}
+              onOpenSandbox={() => setShowSandbox(true)}
+              onSelectRole={(role) => {
+                setActiveRole(role);
+                if (role === 'student') setCurrentView('student');
+                else if (role === 'committee') setCurrentView('committee');
+                else if (role === 'governance') setCurrentView('governance');
+                else setCurrentView('dashboard');
+              }}
+            />
+          )}
 
-        {currentView === 'committee' && (
-          <CommitteeDesk
-            onSelectCase={handleSelectCase}
-          />
-        )}
+          {currentView === 'dashboard' && (
+            <Dashboard
+              selectedCaseId={selectedCaseId}
+              onSelectCase={(cid) => handleSelectCase(cid)}
+              onOpenIntake={() => setShowIntake(true)}
+              onOpenSandbox={() => setShowSandbox(true)}
+              onOpenHashChain={(cid) => setHashChainCaseId(cid)}
+              onOpenNotice={(notice) => setActiveNotice(notice)}
+              activeRole={activeRole}
+            />
+          )}
 
-        {currentView === 'student' && (
-          <StudentPortal
-            onOpenNotice={(notice) => setActiveNotice(notice)}
-            onSelectCase={handleSelectCase}
-          />
-        )}
+          {currentView === 'case-detail' && selectedCaseId && (
+            <CaseDetail
+              caseId={selectedCaseId}
+              onBack={handleBackToDashboard}
+              onOpenHashChain={(cid) => setHashChainCaseId(cid)}
+              onOpenNotice={(notice) => setActiveNotice(notice)}
+              activeRole={activeRole}
+            />
+          )}
 
-        {currentView === 'governance' && (
-          <GovernanceReport />
-        )}
-      </main>
+          {currentView === 'committee' && (
+            <CommitteeDesk
+              onSelectCase={handleSelectCase}
+            />
+          )}
 
-      {/* Footer */}
-      <footer style={{ background: '#0a2540', color: '#94a3b8', padding: '2rem 1.5rem', borderTop: '1px solid #1e3a8a', fontSize: '0.8rem' }}>
-        <div className="app-container" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', padding: 0 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <div style={{
-              width: 32,
-              height: 32,
-              borderRadius: '8px',
-              background: '#2563eb',
-              color: '#ffffff',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}>
-              <Shield size={18} />
+          {currentView === 'student' && (
+            <StudentPortal
+              onOpenNotice={(notice) => setActiveNotice(notice)}
+              onSelectCase={handleSelectCase}
+            />
+          )}
+
+          {currentView === 'governance' && (
+            <GovernanceReport />
+          )}
+        </main>
+
+        {/* Global Institutional Footer with New Crest Logo */}
+        <footer style={{ background: '#0a1a2f', color: '#94a3b8', padding: '2.5rem 1.5rem', borderTop: '1px solid #1e293b', fontSize: '0.8rem' }}>
+          <div className="app-container" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem', padding: 0 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+              <AgentLogo size={36} showText={true} glowing={false} />
             </div>
-            <div>
-              <div style={{ color: '#ffffff', fontWeight: 700, fontSize: '0.9rem' }}>
-                EduGuard — Student Discipline Agent
-              </div>
-              <div>Autonomous Policy & Due-Process Management System • Vignan's Institute</div>
+
+            <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '1.25rem', fontSize: '0.75rem' }}>
+              <span>Consumes Agent 44</span>
+              <span>•</span>
+              <span>Feeds Agents 56, 57</span>
+              <span>•</span>
+              <span>NAAC A+ Accredited</span>
+              <span>•</span>
+              <span>NIRF Ranked</span>
+              <span>•</span>
+              <span>UGC Autonomous</span>
+              <span>•</span>
+              <span style={{ color: '#60a5fa', fontWeight: 600 }}>Agentic AI Day 2026</span>
             </div>
           </div>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', fontSize: '0.75rem' }}>
-            <span>NAAC A+</span>
-            <span>•</span>
-            <span>NIRF Ranked</span>
-            <span>•</span>
-            <span>NBA Accredited</span>
-            <span>•</span>
-            <span>UGC Autonomous</span>
-            <span>•</span>
-            <span style={{ color: '#60a5fa' }}>Agentic AI Day 2026</span>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
 
       {/* MODALS */}
       {hashChainCaseId && (
@@ -142,7 +168,9 @@ export default function App() {
       {showSandbox && (
         <AgentSandboxModal
           onClose={() => setShowSandbox(false)}
-          onCaseCreated={() => {}}
+          onCaseCreated={(newCase) => {
+            handleSelectCase(newCase.caseId);
+          }}
         />
       )}
 
