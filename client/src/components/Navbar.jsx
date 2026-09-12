@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { VignanBanner } from './VignanBanner';
 import { AgentLogo } from './AgentLogo';
 import { Shield, Scale, User, TrendingUp, Layers, Plus, Lock, Bot, Play } from './Icons';
 import { soundFx } from '../utils/audioFx';
@@ -30,6 +31,9 @@ export function Navbar({
 
   return (
     <header style={{ background: '#ffffff', borderBottom: '1px solid #e2e8f0', position: 'sticky', top: 0, zIndex: 100 }}>
+      {/* Top Institutional Header Banner matching user request */}
+      <VignanBanner />
+
       {/* Guardrail & Compliance Sub-Header */}
       <div style={{
         background: '#07152b',
