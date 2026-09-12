@@ -1,4 +1,4 @@
-# Netlify Configuration for EduRecover SPA
+# Netlify Configuration for EduGuard SPA (Agent 47)
 [build]
   base = "client"
   command = "npm run build"
